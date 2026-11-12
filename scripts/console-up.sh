@@ -2,6 +2,8 @@
 # Build and start the console as its own container (independent of the emulator containers).
 #
 #   ./scripts/console-up.sh        # -> http://127.0.0.1:8080
+#   EMULATOR_CONSOLE_BUILD=0 EMULATOR_CONSOLE_IMAGE=ghcr.io/d33ptar00p/emulator-ui:latest ./scripts/console-up.sh
+#                                  # pull a prebuilt image instead of building
 #
 # The console joins the shared Docker network `aws-emulator` (where emulator containers named
 # `aws-emulator-<port>` run) and reaches each one through a loopback relay, so the
@@ -14,17 +16,23 @@ NETWORK="${EMULATOR_NETWORK:-aws-emulator}"
 CONSOLE_NAME="${EMULATOR_CONSOLE_CONTAINER:-emulator-ui}"
 CONSOLE_PORT="${EMULATOR_CONSOLE_PORT:-8080}"
 CONSOLE_IMAGE="${EMULATOR_CONSOLE_IMAGE:-emulator-ui}"
+CONSOLE_BUILD="${EMULATOR_CONSOLE_BUILD:-1}"            # 0 = pull CONSOLE_IMAGE instead of building it
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 EMU_DIR="${HOME}/.aws/emulator"
 STATE_DIR="${EMU_DIR}/${PORT}"
 
-echo "==> Building ${CONSOLE_IMAGE}"
-build_log="$(mktemp)"
-trap 'rm -f "${build_log}"' EXIT
-if ! docker build -f "${ROOT}/docker/console.Dockerfile" -t "${CONSOLE_IMAGE}" "${ROOT}" >"${build_log}" 2>&1; then
-  echo "!!  console image build failed:" >&2
-  tail -40 "${build_log}" >&2
-  exit 1
+if [[ "${CONSOLE_BUILD}" == "0" ]]; then
+  echo "==> Pulling ${CONSOLE_IMAGE}"
+  docker pull --quiet "${CONSOLE_IMAGE}" >/dev/null
+else
+  echo "==> Building ${CONSOLE_IMAGE}"
+  build_log="$(mktemp)"
+  trap 'rm -f "${build_log}"' EXIT
+  if ! docker build -f "${ROOT}/docker/console.Dockerfile" -t "${CONSOLE_IMAGE}" "${ROOT}" >"${build_log}" 2>&1; then
+    echo "!!  console image build failed:" >&2
+    tail -40 "${build_log}" >&2
+    exit 1
+  fi
 fi
 
 # Must exist before mounting, otherwise Docker creates it owned by root.

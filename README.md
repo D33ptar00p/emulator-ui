@@ -38,12 +38,13 @@
 
 ## Quick start
 
-Requires Docker, `uv` and a running AWS Emulator (see [Emulator requirements](#emulator-requirements)).
+Requires Docker and a running AWS Emulator (see [Emulator requirements](#emulator-requirements)).
 
 ```bash
 git clone https://github.com/D33ptar00p/emulator-ui.git && cd emulator-ui
-make up      # build + start the console -> http://127.0.0.1:8080
-make down    # stop the console
+make up-image   # pull the prebuilt image (amd64/arm64) + start -> http://127.0.0.1:8080
+make up         # or build the image from source
+make down       # stop the console
 ```
 
 The console runs in its own container and never starts or stops emulators. Start them in any order; the console

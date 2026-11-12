@@ -3,10 +3,13 @@ SHELL := /bin/bash
 ENV := source scripts/emulator-env.sh &&
 REPORTS := reports
 
-.PHONY: social-preview up down open sync test ui-test lint dev build catalog inventory-baseline
+.PHONY: social-preview up up-image down open sync test ui-test lint dev build catalog inventory-baseline
 
 up:        ## build + start the console container -> http://127.0.0.1:8080 (emulator can start before or after)
 	./scripts/console-up.sh
+
+up-image:  ## pull the prebuilt image from GHCR + start the console (no local build)
+	EMULATOR_CONSOLE_BUILD=0 EMULATOR_CONSOLE_IMAGE=ghcr.io/d33ptar00p/emulator-ui:latest ./scripts/console-up.sh
 
 down:      ## stop the console (emulators keep running)
 	./scripts/console-down.sh
