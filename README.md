@@ -34,6 +34,12 @@
   <a href="#license">License</a>
 </p>
 
+<p align="center">
+  <img src="docs/images/dashboard.png" alt="Emulator UI dashboard: services with resources on top, all 436 services grouped by category" width="100%">
+  <br>
+  <sub>The dashboard: services that hold resources are listed first; every service has a generated icon.</sub>
+</p>
+
 The console runs in **its own container** and connects to emulator containers over a shared Docker network. It never
 starts, stops or changes emulator containers. Start the console and the emulator in any order.
 
