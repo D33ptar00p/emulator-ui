@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/dashboard.png" alt="Emulator UI dashboard" width="100%">
+  <img src="docs/images/demo.gif" alt="Emulator UI demo: dashboard, search, DynamoDB items, S3, Step Functions history and running an API operation" width="100%">
 </p>
 
 ## Quick start
@@ -120,6 +120,7 @@ against the emulator's own certificate. API docs: http://127.0.0.1:8080/api/docs
 ## Contact
 
 - Bugs and questions: [GitHub Issues](https://github.com/D33ptar00p/emulator-ui/issues)
+- Contributing: see [CONTRIBUTING.md](CONTRIBUTING.md)
 - Security: see [SECURITY.md](SECURITY.md); don't open public issues
 - Other: Deeptaroop Mojumdar, deeptaroop2015@gmail.com
 

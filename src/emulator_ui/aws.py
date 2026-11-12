@@ -83,6 +83,20 @@ def client(service: str, region: str | None = None, config: Config | None = None
     return _get("client", service, region, config)
 
 
+def ephemeral_client(service: str, region: str | None = None, config: Config | None = None) -> Any:
+    """An uncached client the caller must close() - for bulk work like the inventory scan, so hundreds of
+    services don't each keep idle keep-alive connections (and file descriptors) open afterwards."""
+    target = regions.resolve(region)
+    state = _session_state(target)
+    with _lock:  # boto3 Session.client isn't documented as thread-safe
+        return state["session"].client(
+            service,
+            endpoint_url=target.endpoint,
+            verify=target.ca_bundle or True,
+            config=_CONFIG.merge(config) if config else _CONFIG,
+        )
+
+
 def dynamodb(region: str | None = None) -> Any:
     """DynamoDB resource (native-type marshalling)."""
     return _get("resource", "dynamodb", region, None)

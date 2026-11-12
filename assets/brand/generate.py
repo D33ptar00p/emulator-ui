@@ -279,11 +279,44 @@ def favicon_ico(sizes: tuple[int, ...] = (16, 32, 48)) -> bytes:
     return header + entries + b"".join(images)
 
 
+# --- GitHub social preview (1280 x 640): the logo above the pixel wordmark ---------------------------
+def _data_uri(svg: str) -> str:
+    import base64
+
+    return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
+
+
+def social_preview_svg() -> str:
+    """Repository social preview: logo + banner wordmark on the brand background. Rasterise with
+    `make social-preview`."""
+    w, h = 1280, 640
+    logo_size = 220
+    banner_w = 980
+    banner_h = round(banner_w * 103 / 1039)  # banner.svg aspect ratio
+    gap = 44
+    top = (h - (logo_size + gap + banner_h)) // 2
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
+        f"<defs>"
+        f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2148"/>'
+        f'<stop offset="1" stop-color="#0d0f1f"/></linearGradient>'
+        f'<radialGradient id="glow" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".30"/>'
+        f'<stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>'
+        f"</defs>"
+        f'<rect width="{w}" height="{h}" fill="url(#bg)"/><rect width="{w}" height="{h}" fill="url(#glow)"/>'
+        f'<image x="{(w - logo_size) // 2}" y="{top}" width="{logo_size}" height="{logo_size}" href="{_data_uri(logo())}"/>'
+        f'<image x="{(w - banner_w) // 2}" y="{top + logo_size + gap}" width="{banner_w}" height="{banner_h}" '
+        f'href="{_data_uri(banner())}"/>'
+        f"</svg>\n"
+    )
+
+
 def main() -> None:
     (OUT / "banner.svg").write_text(banner())
     (OUT / "logo.svg").write_text(logo())
     (OUT / "favicon.svg").write_text(favicon_svg())
     (OUT / "favicon.ico").write_bytes(favicon_ico())
+    (OUT / "social-preview.svg").write_text(social_preview_svg())
     (OUT / "apple-touch-icon.png").write_bytes(_png(176))  # 11 px per cell; iOS scales it
     (OUT / "badges").mkdir(exist_ok=True)
     for name, spec in BADGES.items():

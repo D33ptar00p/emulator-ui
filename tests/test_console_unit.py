@@ -129,3 +129,27 @@ def test_spa_serves_public_files_but_not_outside_static(tmp_path, monkeypatch) -
     assert client.get("/logo.svg").text == "<svg/>"
     assert client.get("/..%2Fsecret.txt").text == "<html>spa</html>"  # traversal falls back to the SPA
     assert client.get("/some/route").text == "<html>spa</html>"
+
+
+def test_inventory_probe_closes_its_client(monkeypatch) -> None:
+    """Regression: the scan touches ~355 services; leaving their clients' connections open exhausted
+    file descriptors ("Too many open files") and broke other requests through the relay."""
+    from emulator_ui import aws, inventory
+
+    closed = []
+
+    class FakeClient:
+        def list_things(self):
+            raise RuntimeError("boom")  # even when a call fails, the client must be closed
+
+        def describe_widgets(self):
+            return {"Widgets": [1, 2]}
+
+        def close(self):
+            closed.append(True)
+
+    monkeypatch.setattr(aws, "ephemeral_client", lambda *a, **k: FakeClient())
+    monkeypatch.setattr(inventory, "baseline", lambda: {})
+    _, result = inventory._probe("svc", ["ListThings", "DescribeWidgets"], "us-east-1")
+    assert closed == [True]
+    assert result["count"] == 2 and result["ops"]["ListThings"].startswith("error")

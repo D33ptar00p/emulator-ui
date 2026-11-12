@@ -23,7 +23,9 @@ from emulator_ui import aws, catalog
 CACHE_SECONDS = 30
 MAX_OPS_PER_SERVICE = 3
 WORKERS = 24
-SCAN_CONFIG = Config(connect_timeout=2, read_timeout=5, retries={"total_max_attempts": 1})
+SCAN_CONFIG = Config(
+    connect_timeout=2, read_timeout=5, retries={"total_max_attempts": 1}, max_pool_connections=1
+)
 
 BASELINE_PATH = Path(__file__).with_name("inventory_baseline.json")
 
@@ -46,25 +48,28 @@ def _probe(
     """count = user-created items (above the built-in baseline); total = everything listed."""
     result: dict[str, Any] = {"count": 0, "total": 0, "ops": {}}
     builtin = baseline() if apply_baseline else {}
-    client = aws.client(service, region=region, config=SCAN_CONFIG)
-    for op in ops[:MAX_OPS_PER_SERVICE]:
-        try:
-            out = getattr(client, xform_name(op))()
-            total = catalog.list_member_count(out)
-            user = max(0, total - builtin.get(f"{service}.{op}", 0))
-            result["ops"][op] = user
-            result["total"] += total
-            result["count"] += user
-        except ClientError as err:
-            status = err.response.get("ResponseMetadata", {}).get("HTTPStatusCode")
-            code = err.response.get("Error", {}).get("Code", "Error")
-            result["ops"][op] = (
-                "not implemented" if status == 501 or code == "NotImplemented" else f"error: {code}"
-            )
-        except (BotoCoreError, ValueError) as err:
-            result["ops"][op] = f"error: {type(err).__name__}"
-        except Exception as err:  # noqa: BLE001 - one broken service must never stop the scan
-            result["ops"][op] = f"error: {type(err).__name__}"
+    client = aws.ephemeral_client(service, region=region, config=SCAN_CONFIG)
+    try:
+        for op in ops[:MAX_OPS_PER_SERVICE]:
+            try:
+                out = getattr(client, xform_name(op))()
+                total = catalog.list_member_count(out)
+                user = max(0, total - builtin.get(f"{service}.{op}", 0))
+                result["ops"][op] = user
+                result["total"] += total
+                result["count"] += user
+            except ClientError as err:
+                status = err.response.get("ResponseMetadata", {}).get("HTTPStatusCode")
+                code = err.response.get("Error", {}).get("Code", "Error")
+                result["ops"][op] = (
+                    "not implemented" if status == 501 or code == "NotImplemented" else f"error: {code}"
+                )
+            except (BotoCoreError, ValueError) as err:
+                result["ops"][op] = f"error: {type(err).__name__}"
+            except Exception as err:  # noqa: BLE001 - one broken service must never stop the scan
+                result["ops"][op] = f"error: {type(err).__name__}"
+    finally:
+        client.close()  # release its connections now; the scan touches hundreds of services
     return service, result
 
 

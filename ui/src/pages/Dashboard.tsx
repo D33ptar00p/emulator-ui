@@ -95,7 +95,13 @@ export function Dashboard({ health }: { health: Health | null }) {
           <div className="tiles">{active.map((s) => <Tile key={s.id} s={s} count={inv[s.id]?.count} scanning={scanning} />)}</div>
         ) : (
           <p className="empty">
-            {scanning ? "Scanning for resources…" : query || category ? "No active services match." : "No resources yet in this region. Create some with the CLI, tests or `make seed`."}
+            {!inventory.data
+              ? "Loading…"
+              : scanning && !Object.keys(inv).length
+                ? "Scanning for resources…"
+                : query || category
+                  ? "No active services match."
+                  : "No resources yet in this region. Create some with the AWS CLI, your tests or this console."}
           </p>
         )}
       </section>

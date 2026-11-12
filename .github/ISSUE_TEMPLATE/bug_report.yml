@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in Emulator UI doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Security issues must not be reported here.** See [SECURITY.md](https://github.com/D33ptar00p/emulator-ui/blob/main/SECURITY.md).
+        If the problem is in AWS Emulator itself (wrong API behaviour, 501s), please report it to [aws/aws-emulator](https://github.com/aws/aws-emulator/issues).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open http://127.0.0.1:8080/#/...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+  - type: dropdown
+    id: run-mode
+    attributes:
+      label: How are you running the console?
+      options:
+        - Container (make up)
+        - Host / dev mode (make dev)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Emulator UI version or commit
+      placeholder: e.g. v0.1.0 or a1b2c3d
+    validations:
+      required: true
+  - type: input
+    id: emulator-version
+    attributes:
+      label: AWS Emulator version
+      description: Output of `aws-emulator -v`, or the image tag you run.
+      placeholder: e.g. 1.0.322
+  - type: input
+    id: environment
+    attributes:
+      label: OS, browser and Docker version
+      placeholder: e.g. Ubuntu 24.04, Chrome 131, Docker 27.3
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Browser console errors, or `docker logs emulator-ui`. Remove anything sensitive.
+      render: shell

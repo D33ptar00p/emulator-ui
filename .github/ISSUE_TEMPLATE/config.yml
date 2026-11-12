@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/D33ptar00p/emulator-ui/security/advisories/new
+    about: Please report security issues privately, not as public issues.
+  - name: Problem with AWS Emulator itself
+    url: https://github.com/aws/aws-emulator/issues
+    about: Wrong API behaviour or unimplemented (501) operations belong to the emulator project.

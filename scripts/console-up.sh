@@ -35,6 +35,7 @@ docker network inspect "${NETWORK}" >/dev/null 2>&1 || docker network create "${
 docker rm -f "${CONSOLE_NAME}" >/dev/null 2>&1 || true
 docker run -d --rm --name "${CONSOLE_NAME}" --label "emulator-ui.role=console" \
   --user "$(id -u):$(id -g)" \
+  --ulimit nofile=65536:65536 \
   --network "${NETWORK}" \
   -p "127.0.0.1:${CONSOLE_PORT}:8080" \
   -e HOME="${HOME}" \

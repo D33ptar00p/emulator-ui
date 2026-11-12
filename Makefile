@@ -3,7 +3,7 @@ SHELL := /bin/bash
 ENV := source scripts/emulator-env.sh &&
 REPORTS := reports
 
-.PHONY: up down open sync test ui-test lint dev build catalog inventory-baseline
+.PHONY: social-preview up down open sync test ui-test lint dev build catalog inventory-baseline
 
 up:        ## build + start the console container -> http://127.0.0.1:8080 (emulator can start before or after)
 	./scripts/console-up.sh
@@ -43,3 +43,12 @@ catalog:   ## regenerate src/emulator_ui/catalog.json + ui/public/icons (offline
 
 inventory-baseline: ## record a fresh emulator's built-in items (throwaway emulator on port 9399, `aws-emulator` image)
 	./scripts/inventory-baseline.sh
+
+social-preview: ## render assets/brand/social-preview.png (1280x640) for GitHub Settings -> Social preview
+	python3 assets/brand/generate.py
+	google-chrome --headless=new --disable-gpu --no-sandbox --hide-scrollbars --window-size=1280,900 \
+		--screenshot=$(CURDIR)/assets/brand/.social-preview-raw.png file://$(CURDIR)/assets/brand/social-preview.svg
+	uv run --no-project --with pillow python -c "from PIL import Image; \
+		Image.open('assets/brand/.social-preview-raw.png').convert('RGB').crop((0, 0, 1280, 640)) \
+		.save('assets/brand/social-preview.png', optimize=True)"
+	rm -f assets/brand/.social-preview-raw.png

@@ -8,3 +8,6 @@ node_modules/
 ui/tsconfig.tsbuildinfo
 src/emulator_ui/static/
 .playwright-mcp/
+
+# local-only helper scripts and their output (demo recording etc.)
+scratch/
