@@ -16,6 +16,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/D33ptar00p/emulator-ui/actions/workflows/ci.yml"><img src="https://github.com/D33ptar00p/emulator-ui/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
   <img src="assets/brand/badges/services.svg" alt="services: 436">
   <img src="assets/brand/badges/emulator.svg" alt="tested with: emulator v1.0.322">
   <img src="assets/brand/badges/python.svg" alt="Python: 3.11+">
