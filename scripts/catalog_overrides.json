@@ -1,0 +1,124 @@
+{
+  "_comment": "listOps: hand-picked browse operations per service. monograms: icon text overrides (2-4 chars, A-Z/0-9) for well-known services; everything else is derived from botocore's serviceId by scripts/build_icons.py.",
+  "listOps": {
+    "ec2": [
+      "DescribeInstances",
+      "DescribeVpcs",
+      "DescribeSubnets",
+      "DescribeSecurityGroups",
+      "DescribeVolumes",
+      "DescribeKeyPairs"
+    ],
+    "s3": [
+      "ListBuckets"
+    ],
+    "dynamodb": [
+      "ListTables",
+      "ListBackups",
+      "ListGlobalTables"
+    ],
+    "lambda": [
+      "ListFunctions",
+      "ListLayers",
+      "ListEventSourceMappings"
+    ],
+    "sqs": [
+      "ListQueues"
+    ],
+    "sns": [
+      "ListTopics",
+      "ListSubscriptions"
+    ],
+    "iam": [
+      "ListRoles",
+      "ListUsers",
+      "ListPolicies",
+      "ListGroups"
+    ],
+    "stepfunctions": [
+      "ListStateMachines",
+      "ListActivities"
+    ],
+    "events": [
+      "ListEventBuses",
+      "ListRules",
+      "ListArchives",
+      "ListConnections"
+    ],
+    "apigateway": [
+      "GetRestApis",
+      "GetApiKeys",
+      "GetDomainNames",
+      "GetUsagePlans"
+    ],
+    "apigatewayv2": [
+      "GetApis",
+      "GetDomainNames",
+      "GetVpcLinks"
+    ],
+    "appsync": [
+      "ListGraphqlApis",
+      "ListApis",
+      "ListDomainNames"
+    ],
+    "kms": [
+      "ListKeys",
+      "ListAliases"
+    ],
+    "secretsmanager": [
+      "ListSecrets"
+    ],
+    "logs": [
+      "DescribeLogGroups"
+    ],
+    "cloudformation": [
+      "ListStacks",
+      "ListStackSets"
+    ],
+    "ecr": [
+      "DescribeRepositories"
+    ],
+    "ecs": [
+      "ListClusters",
+      "ListTaskDefinitions"
+    ],
+    "rds": [
+      "DescribeDBInstances",
+      "DescribeDBClusters"
+    ],
+    "cloudfront": [
+      "ListDistributions"
+    ],
+    "route53": [
+      "ListHostedZones"
+    ],
+    "ssm": [
+      "DescribeParameters"
+    ],
+    "cognito-idp": [
+      "ListUserPools"
+    ]
+  },
+  "monograms": {
+    "dynamodb": "DDB",
+    "lambda": "FN",
+    "stepfunctions": "SFN",
+    "apigateway": "APIG",
+    "apigatewayv2": "API2",
+    "events": "EVB",
+    "logs": "LOGS",
+    "cloudwatch": "CW",
+    "cloudformation": "CFN",
+    "secretsmanager": "SEC",
+    "route53": "R53",
+    "cognito-idp": "COG",
+    "appsync": "GQL",
+    "sns": "SNS",
+    "sqs": "SQS",
+    "s3": "S3",
+    "ec2": "EC2",
+    "iam": "IAM",
+    "kms": "KMS",
+    "sts": "STS"
+  }
+}

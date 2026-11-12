@@ -1,0 +1,5838 @@
+{
+ "source": "botocore",
+ "services": [
+  {
+   "id": "accessanalyzer",
+   "fullName": "Access Analyzer",
+   "serviceId": "AccessAnalyzer",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/accessanalyzer.svg",
+   "protocol": "rest-json",
+   "operations": 39,
+   "listOps": [
+    "ListAnalyzers",
+    "ListPolicyGenerations"
+   ]
+  },
+  {
+   "id": "account",
+   "fullName": "AWS Account",
+   "serviceId": "Account",
+   "category": "Management Tools",
+   "icon": "icons/account.svg",
+   "protocol": "rest-json",
+   "operations": 18,
+   "listOps": []
+  },
+  {
+   "id": "account-access",
+   "fullName": "Account Access",
+   "serviceId": "Account Access",
+   "category": "Management Tools",
+   "icon": "icons/account-access.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListApplications"
+   ]
+  },
+  {
+   "id": "account-access-runtime",
+   "fullName": "Account Access Runtime",
+   "serviceId": "Account Access Runtime",
+   "category": "Management Tools",
+   "icon": "icons/account-access-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "acm",
+   "fullName": "AWS Certificate Manager",
+   "serviceId": "ACM",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/acm.svg",
+   "protocol": "json",
+   "operations": 40,
+   "listOps": [
+    "ListCertificates"
+   ]
+  },
+  {
+   "id": "acm-pca",
+   "fullName": "AWS Certificate Manager Private Certificate Authority",
+   "serviceId": "ACM PCA",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/acm-pca.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 23,
+   "listOps": [
+    "ListCertificateAuthorities"
+   ]
+  },
+  {
+   "id": "agent-registry",
+   "fullName": "Agent Registry",
+   "serviceId": "Agent Registry",
+   "category": "Artificial Intelligence",
+   "icon": "icons/agent-registry.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "agent-registry-control",
+   "fullName": "Agent Registry Control",
+   "serviceId": "Agent Registry Control",
+   "category": "Artificial Intelligence",
+   "icon": "icons/agent-registry-control.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": [
+    "ListRegistries"
+   ]
+  },
+  {
+   "id": "aiops",
+   "fullName": "AWS AI Ops",
+   "serviceId": "AIOps",
+   "category": "Management Tools",
+   "icon": "icons/aiops.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListInvestigationGroups"
+   ]
+  },
+  {
+   "id": "amp",
+   "fullName": "Amazon Prometheus Service",
+   "serviceId": "amp",
+   "category": "Management Tools",
+   "icon": "icons/amp.svg",
+   "protocol": "rest-json",
+   "operations": 44,
+   "listOps": [
+    "ListScrapers",
+    "ListWorkspaces"
+   ]
+  },
+  {
+   "id": "amplify",
+   "fullName": "AWS Amplify",
+   "serviceId": "Amplify",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/amplify.svg",
+   "protocol": "rest-json",
+   "operations": 37,
+   "listOps": [
+    "ListApps"
+   ]
+  },
+  {
+   "id": "amplifybackend",
+   "fullName": "AmplifyBackend",
+   "serviceId": "AmplifyBackend",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/amplifybackend.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListS3Buckets"
+   ]
+  },
+  {
+   "id": "amplifyuibuilder",
+   "fullName": "AWS Amplify UI Builder",
+   "serviceId": "AmplifyUIBuilder",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/amplifyuibuilder.svg",
+   "protocol": "rest-json",
+   "operations": 28,
+   "listOps": []
+  },
+  {
+   "id": "apigateway",
+   "fullName": "Amazon API Gateway",
+   "serviceId": "API Gateway",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/apigateway.svg",
+   "protocol": "rest-json",
+   "operations": 124,
+   "listOps": [
+    "GetRestApis",
+    "GetApiKeys",
+    "GetDomainNames",
+    "GetUsagePlans"
+   ]
+  },
+  {
+   "id": "apigatewaymanagementapi",
+   "fullName": "AmazonApiGatewayManagementApi",
+   "serviceId": "ApiGatewayManagementApi",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/apigatewaymanagementapi.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "apigatewayv2",
+   "fullName": "AmazonApiGatewayV2",
+   "serviceId": "ApiGatewayV2",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/apigatewayv2.svg",
+   "protocol": "rest-json",
+   "operations": 103,
+   "listOps": [
+    "GetApis",
+    "GetDomainNames",
+    "GetVpcLinks"
+   ]
+  },
+  {
+   "id": "appconfig",
+   "fullName": "Amazon AppConfig",
+   "serviceId": "AppConfig",
+   "category": "Management Tools",
+   "icon": "icons/appconfig.svg",
+   "protocol": "rest-json",
+   "operations": 56,
+   "listOps": [
+    "ListApplications",
+    "ListDeploymentStrategies",
+    "ListExperimentDefinitions",
+    "ListExtensionAssociations",
+    "ListExtensions"
+   ]
+  },
+  {
+   "id": "appconfigdata",
+   "fullName": "AWS AppConfig Data",
+   "serviceId": "AppConfigData",
+   "category": "Management Tools",
+   "icon": "icons/appconfigdata.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "appfabric",
+   "fullName": "AppFabric",
+   "serviceId": "AppFabric",
+   "category": "Business Applications",
+   "icon": "icons/appfabric.svg",
+   "protocol": "rest-json",
+   "operations": 26,
+   "listOps": [
+    "ListAppBundles"
+   ]
+  },
+  {
+   "id": "appflow",
+   "fullName": "Amazon Appflow",
+   "serviceId": "Appflow",
+   "category": "Application Integration",
+   "icon": "icons/appflow.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "DescribeConnectorProfiles",
+    "DescribeConnectors",
+    "ListConnectors",
+    "ListFlows"
+   ]
+  },
+  {
+   "id": "appintegrations",
+   "fullName": "Amazon AppIntegrations Service",
+   "serviceId": "AppIntegrations",
+   "category": "Business Applications",
+   "icon": "icons/appintegrations.svg",
+   "protocol": "rest-json",
+   "operations": 23,
+   "listOps": [
+    "ListApplications",
+    "ListDataIntegrations",
+    "ListEventIntegrations"
+   ]
+  },
+  {
+   "id": "application-autoscaling",
+   "fullName": "Application Auto Scaling",
+   "serviceId": "Application Auto Scaling",
+   "category": "Management Tools",
+   "icon": "icons/application-autoscaling.svg",
+   "protocol": "json",
+   "operations": 14,
+   "listOps": []
+  },
+  {
+   "id": "application-insights",
+   "fullName": "Amazon CloudWatch Application Insights",
+   "serviceId": "Application Insights",
+   "category": "Management Tools",
+   "icon": "icons/application-insights.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 33,
+   "listOps": [
+    "ListApplications",
+    "ListConfigurationHistory",
+    "ListProblems"
+   ]
+  },
+  {
+   "id": "application-signals",
+   "fullName": "Amazon CloudWatch Application Signals",
+   "serviceId": "Application Signals",
+   "category": "Management Tools",
+   "icon": "icons/application-signals.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListGroupingAttributeDefinitions",
+    "ListServiceLevelObjectives"
+   ]
+  },
+  {
+   "id": "applicationcostprofiler",
+   "fullName": "AWS Application Cost Profiler",
+   "serviceId": "ApplicationCostProfiler",
+   "category": "Cloud Financial Management",
+   "icon": "icons/applicationcostprofiler.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": [
+    "ListReportDefinitions"
+   ]
+  },
+  {
+   "id": "appmesh",
+   "fullName": "AWS App Mesh",
+   "serviceId": "App Mesh",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/appmesh.svg",
+   "protocol": "rest-json",
+   "operations": 38,
+   "listOps": [
+    "ListMeshes"
+   ]
+  },
+  {
+   "id": "apprunner",
+   "fullName": "AWS App Runner",
+   "serviceId": "AppRunner",
+   "category": "Compute",
+   "icon": "icons/apprunner.svg",
+   "protocol": "json",
+   "operations": 37,
+   "listOps": [
+    "ListConnections",
+    "ListServices",
+    "ListVpcConnectors",
+    "ListVpcIngressConnections"
+   ]
+  },
+  {
+   "id": "appstream",
+   "fullName": "Amazon AppStream",
+   "serviceId": "AppStream",
+   "category": "End User Computing",
+   "icon": "icons/appstream.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 89,
+   "listOps": [
+    "DescribeAppBlockBuilderAppBlockAssociations",
+    "DescribeAppBlockBuilders",
+    "DescribeAppBlocks",
+    "DescribeApplicationFleetAssociations",
+    "DescribeApplications",
+    "DescribeDirectoryConfigs"
+   ]
+  },
+  {
+   "id": "appsync",
+   "fullName": "AWS AppSync",
+   "serviceId": "AppSync",
+   "category": "Application Integration",
+   "icon": "icons/appsync.svg",
+   "protocol": "rest-json",
+   "operations": 74,
+   "listOps": [
+    "ListGraphqlApis",
+    "ListApis",
+    "ListDomainNames"
+   ]
+  },
+  {
+   "id": "arc-region-switch",
+   "fullName": "ARC - Region switch",
+   "serviceId": "ARC Region switch",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/arc-region-switch.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 22,
+   "listOps": [
+    "ListPlans",
+    "ListPlansInRegion",
+    "ListServiceQuotaWarnings"
+   ]
+  },
+  {
+   "id": "arc-zonal-shift",
+   "fullName": "AWS ARC - Zonal Shift",
+   "serviceId": "ARC Zonal Shift",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/arc-zonal-shift.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": [
+    "ListAutoshifts",
+    "ListManagedResources",
+    "ListZonalShifts"
+   ]
+  },
+  {
+   "id": "artifact",
+   "fullName": "AWS Artifact",
+   "serviceId": "Artifact",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/artifact.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListComplianceInquiries",
+    "ListCustomerAgreements",
+    "ListReports"
+   ]
+  },
+  {
+   "id": "athena",
+   "fullName": "Amazon Athena",
+   "serviceId": "Athena",
+   "category": "Analytics",
+   "icon": "icons/athena.svg",
+   "protocol": "json",
+   "operations": 75,
+   "listOps": [
+    "ListApplicationDPUSizes",
+    "ListCapacityReservations",
+    "ListDataCatalogs",
+    "ListNamedQueries",
+    "ListQueryExecutions",
+    "ListWorkGroups"
+   ]
+  },
+  {
+   "id": "auditmanager",
+   "fullName": "AWS Audit Manager",
+   "serviceId": "AuditManager",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/auditmanager.svg",
+   "protocol": "rest-json",
+   "operations": 62,
+   "listOps": [
+    "ListAssessmentReports",
+    "ListAssessments",
+    "ListControlDomainInsights",
+    "ListNotifications"
+   ]
+  },
+  {
+   "id": "autoscaling",
+   "fullName": "Auto Scaling",
+   "serviceId": "Auto Scaling",
+   "category": "Management Tools",
+   "icon": "icons/autoscaling.svg",
+   "protocol": "query",
+   "operations": 68,
+   "listOps": [
+    "DescribeAutoScalingGroups",
+    "DescribeAutoScalingInstances",
+    "DescribeScalingActivities",
+    "DescribeScheduledActions"
+   ]
+  },
+  {
+   "id": "autoscaling-plans",
+   "fullName": "AWS Auto Scaling Plans",
+   "serviceId": "Auto Scaling Plans",
+   "category": "Management Tools",
+   "icon": "icons/autoscaling-plans.svg",
+   "protocol": "json",
+   "operations": 6,
+   "listOps": [
+    "DescribeScalingPlans"
+   ]
+  },
+  {
+   "id": "b2bi",
+   "fullName": "AWS B2B Data Interchange",
+   "serviceId": "b2bi",
+   "category": "Application Integration",
+   "icon": "icons/b2bi.svg",
+   "protocol": "json",
+   "operations": 30,
+   "listOps": [
+    "ListPartnerships",
+    "ListProfiles",
+    "ListTransformers"
+   ]
+  },
+  {
+   "id": "backup",
+   "fullName": "AWS Backup",
+   "serviceId": "Backup",
+   "category": "Storage",
+   "icon": "icons/backup.svg",
+   "protocol": "rest-json",
+   "operations": 115,
+   "listOps": [
+    "ListBackupAccessPoints",
+    "ListBackupJobSummaries",
+    "ListBackupJobs",
+    "ListBackupPlans",
+    "ListBackupVaults",
+    "ListCopyJobSummaries"
+   ]
+  },
+  {
+   "id": "backup-gateway",
+   "fullName": "AWS Backup Gateway",
+   "serviceId": "Backup Gateway",
+   "category": "Storage",
+   "icon": "icons/backup-gateway.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 25,
+   "listOps": [
+    "ListGateways",
+    "ListHypervisors",
+    "ListVirtualMachines"
+   ]
+  },
+  {
+   "id": "backupsearch",
+   "fullName": "AWS Backup Search",
+   "serviceId": "BackupSearch",
+   "category": "Storage",
+   "icon": "icons/backupsearch.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListSearchJobs",
+    "ListSearchResultExportJobs"
+   ]
+  },
+  {
+   "id": "batch",
+   "fullName": "AWS Batch",
+   "serviceId": "Batch",
+   "category": "Compute",
+   "icon": "icons/batch.svg",
+   "protocol": "rest-json",
+   "operations": 48,
+   "listOps": [
+    "DescribeComputeEnvironments",
+    "DescribeJobDefinitions",
+    "DescribeJobQueues",
+    "DescribeServiceEnvironments",
+    "ListConsumableResources",
+    "ListJobs"
+   ]
+  },
+  {
+   "id": "bcm-dashboards",
+   "fullName": "AWS Billing and Cost Management Dashboards",
+   "serviceId": "BCM Dashboards",
+   "category": "Cloud Financial Management",
+   "icon": "icons/bcm-dashboards.svg",
+   "protocol": "json",
+   "operations": 15,
+   "listOps": [
+    "ListDashboards",
+    "ListScheduledReports"
+   ]
+  },
+  {
+   "id": "bcm-data-exports",
+   "fullName": "AWS Billing and Cost Management Data Exports",
+   "serviceId": "BCM Data Exports",
+   "category": "Cloud Financial Management",
+   "icon": "icons/bcm-data-exports.svg",
+   "protocol": "json",
+   "operations": 12,
+   "listOps": [
+    "ListExports",
+    "ListTables"
+   ]
+  },
+  {
+   "id": "bcm-pricing-calculator",
+   "fullName": "AWS Billing and Cost Management Pricing Calculator",
+   "serviceId": "BCM Pricing Calculator",
+   "category": "Cloud Financial Management",
+   "icon": "icons/bcm-pricing-calculator.svg",
+   "protocol": "json",
+   "operations": 36,
+   "listOps": [
+    "ListBillEstimates",
+    "ListBillScenarios",
+    "ListWorkloadEstimates"
+   ]
+  },
+  {
+   "id": "bcm-recommended-actions",
+   "fullName": "AWS Billing and Cost Management Recommended Actions",
+   "serviceId": "BCM Recommended Actions",
+   "category": "Cloud Financial Management",
+   "icon": "icons/bcm-recommended-actions.svg",
+   "protocol": "json",
+   "operations": 1,
+   "listOps": [
+    "ListRecommendedActions"
+   ]
+  },
+  {
+   "id": "bedrock",
+   "fullName": "Amazon Bedrock",
+   "serviceId": "Bedrock",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock.svg",
+   "protocol": "rest-json",
+   "operations": 108,
+   "listOps": [
+    "ListAdvancedPromptOptimizationJobs",
+    "ListCustomModelDeployments",
+    "ListCustomModels",
+    "ListEvaluationJobs",
+    "ListFoundationModels",
+    "ListGuardrails"
+   ]
+  },
+  {
+   "id": "bedrock-agent",
+   "fullName": "Agents for Amazon Bedrock",
+   "serviceId": "Bedrock Agent",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-agent.svg",
+   "protocol": "rest-json",
+   "operations": 86,
+   "listOps": [
+    "ListAgents",
+    "ListFlows",
+    "ListKnowledgeBases",
+    "ListPrompts",
+    "ListRetrievalInstructions"
+   ]
+  },
+  {
+   "id": "bedrock-agent-runtime",
+   "fullName": "Agents for Amazon Bedrock Runtime",
+   "serviceId": "Bedrock Agent Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-agent-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 35,
+   "listOps": [
+    "ListSessions"
+   ]
+  },
+  {
+   "id": "bedrock-agentcore",
+   "fullName": "Amazon Bedrock AgentCore",
+   "serviceId": "Bedrock AgentCore",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-agentcore.svg",
+   "protocol": "rest-json",
+   "operations": 68,
+   "listOps": [
+    "ListABTests",
+    "ListBatchEvaluations"
+   ]
+  },
+  {
+   "id": "bedrock-agentcore-control",
+   "fullName": "Amazon Bedrock AgentCore Control",
+   "serviceId": "Bedrock AgentCore Control",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-agentcore-control.svg",
+   "protocol": "rest-json",
+   "operations": 172,
+   "listOps": [
+    "ListAgentRuntimes",
+    "ListApiKeyCredentialProviders",
+    "ListBrowserProfiles",
+    "ListBrowsers",
+    "ListCapacityProviders",
+    "ListCodeInterpreters"
+   ]
+  },
+  {
+   "id": "bedrock-data-automation",
+   "fullName": "Data Automation for Amazon Bedrock",
+   "serviceId": "Bedrock Data Automation",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-data-automation.svg",
+   "protocol": "rest-json",
+   "operations": 27,
+   "listOps": [
+    "ListBlueprints",
+    "ListDataAutomationLibraries",
+    "ListDataAutomationProjects"
+   ]
+  },
+  {
+   "id": "bedrock-data-automation-runtime",
+   "fullName": "Runtime for Amazon Bedrock Data Automation",
+   "serviceId": "Bedrock Data Automation Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-data-automation-runtime.svg",
+   "protocol": "json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "bedrock-runtime",
+   "fullName": "Amazon Bedrock Runtime",
+   "serviceId": "Bedrock Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/bedrock-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListAsyncInvokes"
+   ]
+  },
+  {
+   "id": "billing",
+   "fullName": "AWS Billing",
+   "serviceId": "Billing",
+   "category": "Cloud Financial Management",
+   "icon": "icons/billing.svg",
+   "protocol": "json",
+   "operations": 32,
+   "listOps": [
+    "ListBillingViewSegments",
+    "ListBillingViews",
+    "ListBusinessSupportSubscriptionHistory",
+    "ListContracts"
+   ]
+  },
+  {
+   "id": "billingconductor",
+   "fullName": "AWSBillingConductor",
+   "serviceId": "billingconductor",
+   "category": "Cloud Financial Management",
+   "icon": "icons/billingconductor.svg",
+   "protocol": "rest-json",
+   "operations": 34,
+   "listOps": [
+    "ListAccountAssociations",
+    "ListBillingGroupCostReports",
+    "ListBillingGroups",
+    "ListCustomLineItems",
+    "ListPricingPlans",
+    "ListPricingRules"
+   ]
+  },
+  {
+   "id": "braket",
+   "fullName": "Braket",
+   "serviceId": "Braket",
+   "category": "Quantum Technologies",
+   "icon": "icons/braket.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": []
+  },
+  {
+   "id": "budgets",
+   "fullName": "AWS Budgets",
+   "serviceId": "Budgets",
+   "category": "Cloud Financial Management",
+   "icon": "icons/budgets.svg",
+   "protocol": "json",
+   "operations": 26,
+   "listOps": []
+  },
+  {
+   "id": "ce",
+   "fullName": "AWS Cost Explorer Service",
+   "serviceId": "Cost Explorer",
+   "category": "Cloud Financial Management",
+   "icon": "icons/ce.svg",
+   "protocol": "json",
+   "operations": 47,
+   "listOps": [
+    "ListCommitmentPurchaseAnalyses",
+    "ListCostAllocationTagBackfillHistory",
+    "ListCostCategoryDefinitions",
+    "ListCostCategoryResourceAssociations",
+    "ListSavingsPlansPurchaseRecommendationGeneration"
+   ]
+  },
+  {
+   "id": "chatbot",
+   "fullName": "AWS Chatbot",
+   "serviceId": "chatbot",
+   "category": "Management Tools",
+   "icon": "icons/chatbot.svg",
+   "protocol": "rest-json",
+   "operations": 34,
+   "listOps": [
+    "DescribeSlackUserIdentities",
+    "DescribeSlackWorkspaces",
+    "ListCustomActions",
+    "ListMicrosoftTeamsConfiguredTeams",
+    "ListMicrosoftTeamsUserIdentities"
+   ]
+  },
+  {
+   "id": "chime",
+   "fullName": "Amazon Chime",
+   "serviceId": "Chime",
+   "category": "Business Applications",
+   "icon": "icons/chime.svg",
+   "protocol": "rest-json",
+   "operations": 62,
+   "listOps": [
+    "ListAccounts",
+    "ListPhoneNumberOrders",
+    "ListPhoneNumbers"
+   ]
+  },
+  {
+   "id": "chime-sdk-identity",
+   "fullName": "Amazon Chime SDK Identity",
+   "serviceId": "Chime SDK Identity",
+   "category": "Business Applications",
+   "icon": "icons/chime-sdk-identity.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListAppInstances"
+   ]
+  },
+  {
+   "id": "chime-sdk-media-pipelines",
+   "fullName": "Amazon Chime SDK Media Pipelines",
+   "serviceId": "Chime SDK Media Pipelines",
+   "category": "Business Applications",
+   "icon": "icons/chime-sdk-media-pipelines.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListMediaCapturePipelines",
+    "ListMediaPipelineKinesisVideoStreamPools",
+    "ListMediaPipelines"
+   ]
+  },
+  {
+   "id": "chime-sdk-meetings",
+   "fullName": "Amazon Chime SDK Meetings",
+   "serviceId": "Chime SDK Meetings",
+   "category": "Business Applications",
+   "icon": "icons/chime-sdk-meetings.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": []
+  },
+  {
+   "id": "chime-sdk-messaging",
+   "fullName": "Amazon Chime SDK Messaging",
+   "serviceId": "Chime SDK Messaging",
+   "category": "Business Applications",
+   "icon": "icons/chime-sdk-messaging.svg",
+   "protocol": "rest-json",
+   "operations": 51,
+   "listOps": []
+  },
+  {
+   "id": "chime-sdk-voice",
+   "fullName": "Amazon Chime SDK Voice",
+   "serviceId": "Chime SDK Voice",
+   "category": "Business Applications",
+   "icon": "icons/chime-sdk-voice.svg",
+   "protocol": "rest-json",
+   "operations": 96,
+   "listOps": [
+    "ListPhoneNumberOrders",
+    "ListPhoneNumbers",
+    "ListSipMediaApplications",
+    "ListSipRules",
+    "ListVoiceConnectorGroups",
+    "ListVoiceConnectors"
+   ]
+  },
+  {
+   "id": "cleanrooms",
+   "fullName": "AWS Clean Rooms Service",
+   "serviceId": "CleanRooms",
+   "category": "Analytics",
+   "icon": "icons/cleanrooms.svg",
+   "protocol": "rest-json",
+   "operations": 103,
+   "listOps": [
+    "ListCollaborations",
+    "ListConfiguredTables",
+    "ListMemberships"
+   ]
+  },
+  {
+   "id": "cleanroomsml",
+   "fullName": "AWS Clean Rooms ML",
+   "serviceId": "CleanRoomsML",
+   "category": "Analytics",
+   "icon": "icons/cleanroomsml.svg",
+   "protocol": "rest-json",
+   "operations": 59,
+   "listOps": [
+    "ListAudienceExportJobs",
+    "ListAudienceGenerationJobs",
+    "ListAudienceModels",
+    "ListConfiguredAudienceModels",
+    "ListConfiguredModelAlgorithms",
+    "ListTrainingDatasets"
+   ]
+  },
+  {
+   "id": "cloud9",
+   "fullName": "AWS Cloud9",
+   "serviceId": "Cloud9",
+   "category": "Developer Tools",
+   "icon": "icons/cloud9.svg",
+   "protocol": "json",
+   "operations": 13,
+   "listOps": [
+    "DescribeEnvironmentMemberships",
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "cloudcontrol",
+   "fullName": "AWS Cloud Control API",
+   "serviceId": "CloudControl",
+   "category": "Developer Tools",
+   "icon": "icons/cloudcontrol.svg",
+   "protocol": "json",
+   "operations": 8,
+   "listOps": [
+    "ListResourceRequests"
+   ]
+  },
+  {
+   "id": "clouddirectory",
+   "fullName": "Amazon CloudDirectory",
+   "serviceId": "CloudDirectory",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/clouddirectory.svg",
+   "protocol": "rest-json",
+   "operations": 66,
+   "listOps": [
+    "ListDevelopmentSchemaArns",
+    "ListDirectories",
+    "ListManagedSchemaArns",
+    "ListPublishedSchemaArns"
+   ]
+  },
+  {
+   "id": "cloudformation",
+   "fullName": "AWS CloudFormation",
+   "serviceId": "CloudFormation",
+   "category": "Management Tools",
+   "icon": "icons/cloudformation.svg",
+   "protocol": "query",
+   "operations": 90,
+   "listOps": [
+    "ListStacks",
+    "ListStackSets"
+   ]
+  },
+  {
+   "id": "cloudfront",
+   "fullName": "Amazon CloudFront",
+   "serviceId": "CloudFront",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/cloudfront.svg",
+   "protocol": "rest-xml",
+   "operations": 167,
+   "listOps": [
+    "ListDistributions"
+   ]
+  },
+  {
+   "id": "cloudfront-keyvaluestore",
+   "fullName": "Amazon CloudFront KeyValueStore",
+   "serviceId": "CloudFront KeyValueStore",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/cloudfront-keyvaluestore.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "cloudhsm",
+   "fullName": "Amazon CloudHSM",
+   "serviceId": "CloudHSM",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/cloudhsm.svg",
+   "protocol": "json",
+   "operations": 20,
+   "listOps": [
+    "DescribeHsm",
+    "ListAvailableZones",
+    "ListHapgs",
+    "ListHsms",
+    "ListLunaClients"
+   ]
+  },
+  {
+   "id": "cloudhsmv2",
+   "fullName": "AWS CloudHSM V2",
+   "serviceId": "CloudHSM V2",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/cloudhsmv2.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 18,
+   "listOps": [
+    "DescribeBackups",
+    "DescribeClusters"
+   ]
+  },
+  {
+   "id": "cloudsearch",
+   "fullName": "Amazon CloudSearch",
+   "serviceId": "CloudSearch",
+   "category": "Analytics",
+   "icon": "icons/cloudsearch.svg",
+   "protocol": "query",
+   "operations": 26,
+   "listOps": [
+    "DescribeDomains"
+   ]
+  },
+  {
+   "id": "cloudsearchdomain",
+   "fullName": "Amazon CloudSearch Domain",
+   "serviceId": "CloudSearch Domain",
+   "category": "Analytics",
+   "icon": "icons/cloudsearchdomain.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "cloudtrail",
+   "fullName": "AWS CloudTrail",
+   "serviceId": "CloudTrail",
+   "category": "Management Tools",
+   "icon": "icons/cloudtrail.svg",
+   "protocol": "json",
+   "operations": 60,
+   "listOps": [
+    "DescribeTrails",
+    "ListChannels",
+    "ListDashboards",
+    "ListEventDataStores",
+    "ListImports",
+    "ListPublicKeys"
+   ]
+  },
+  {
+   "id": "cloudtrail-data",
+   "fullName": "AWS CloudTrail Data Service",
+   "serviceId": "CloudTrail Data",
+   "category": "Management Tools",
+   "icon": "icons/cloudtrail-data.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "cloudwatch",
+   "fullName": "Amazon CloudWatch",
+   "serviceId": "CloudWatch",
+   "category": "Management Tools",
+   "icon": "icons/cloudwatch.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 55,
+   "listOps": [
+    "DescribeAlarmHistory",
+    "DescribeAlarms",
+    "DescribeAnomalyDetectors",
+    "DescribeInsightRules",
+    "ListAlarmMuteRules",
+    "ListDashboards"
+   ]
+  },
+  {
+   "id": "cloudwatchomni",
+   "fullName": "CloudWatch Omni",
+   "serviceId": "CloudWatchOmni",
+   "category": "Management Tools",
+   "icon": "icons/cloudwatchomni.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 62,
+   "listOps": [
+    "ListAccessGrants",
+    "ListDomainAccessGrantsForOrganization",
+    "ListDomains",
+    "ListIntegrations",
+    "ListSpaces",
+    "ListSpacesForOrganization"
+   ]
+  },
+  {
+   "id": "codeartifact",
+   "fullName": "CodeArtifact",
+   "serviceId": "codeartifact",
+   "category": "Developer Tools",
+   "icon": "icons/codeartifact.svg",
+   "protocol": "rest-json",
+   "operations": 48,
+   "listOps": [
+    "ListDomains",
+    "ListRepositories"
+   ]
+  },
+  {
+   "id": "codebuild",
+   "fullName": "AWS CodeBuild",
+   "serviceId": "CodeBuild",
+   "category": "Developer Tools",
+   "icon": "icons/codebuild.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 59,
+   "listOps": [
+    "ListBuildBatches",
+    "ListBuildBatchesForProject",
+    "ListBuilds",
+    "ListCuratedEnvironmentImages",
+    "ListFleets",
+    "ListProjects"
+   ]
+  },
+  {
+   "id": "codecatalyst",
+   "fullName": "Amazon CodeCatalyst",
+   "serviceId": "CodeCatalyst",
+   "category": "Developer Tools",
+   "icon": "icons/codecatalyst.svg",
+   "protocol": "rest-json",
+   "operations": 38,
+   "listOps": [
+    "ListAccessTokens",
+    "ListSpaces"
+   ]
+  },
+  {
+   "id": "codecommit",
+   "fullName": "AWS CodeCommit",
+   "serviceId": "CodeCommit",
+   "category": "Developer Tools",
+   "icon": "icons/codecommit.svg",
+   "protocol": "json",
+   "operations": 80,
+   "listOps": [
+    "ListRepositories"
+   ]
+  },
+  {
+   "id": "codeconnections",
+   "fullName": "AWS CodeConnections",
+   "serviceId": "CodeConnections",
+   "category": "Developer Tools",
+   "icon": "icons/codeconnections.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 27,
+   "listOps": [
+    "ListConnections",
+    "ListHosts",
+    "ListRepositoryLinks"
+   ]
+  },
+  {
+   "id": "codedeploy",
+   "fullName": "AWS CodeDeploy",
+   "serviceId": "CodeDeploy",
+   "category": "Developer Tools",
+   "icon": "icons/codedeploy.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 47,
+   "listOps": [
+    "ListApplications",
+    "ListDeploymentConfigs",
+    "ListDeployments",
+    "ListGitHubAccountTokenNames",
+    "ListOnPremisesInstances"
+   ]
+  },
+  {
+   "id": "codeguru-reviewer",
+   "fullName": "Amazon CodeGuru Reviewer",
+   "serviceId": "CodeGuru Reviewer",
+   "category": "Artificial Intelligence",
+   "icon": "icons/codeguru-reviewer.svg",
+   "protocol": "rest-json",
+   "operations": 14,
+   "listOps": [
+    "ListRepositoryAssociations"
+   ]
+  },
+  {
+   "id": "codeguru-security",
+   "fullName": "Amazon CodeGuru Security",
+   "serviceId": "CodeGuru Security",
+   "category": "Artificial Intelligence",
+   "icon": "icons/codeguru-security.svg",
+   "protocol": "rest-json",
+   "operations": 13,
+   "listOps": [
+    "ListScans"
+   ]
+  },
+  {
+   "id": "codeguruprofiler",
+   "fullName": "Amazon CodeGuru Profiler",
+   "serviceId": "CodeGuruProfiler",
+   "category": "Artificial Intelligence",
+   "icon": "icons/codeguruprofiler.svg",
+   "protocol": "rest-json",
+   "operations": 23,
+   "listOps": [
+    "ListProfilingGroups"
+   ]
+  },
+  {
+   "id": "codepipeline",
+   "fullName": "AWS CodePipeline",
+   "serviceId": "CodePipeline",
+   "category": "Developer Tools",
+   "icon": "icons/codepipeline.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 44,
+   "listOps": [
+    "ListPipelines",
+    "ListWebhooks"
+   ]
+  },
+  {
+   "id": "codestar-connections",
+   "fullName": "AWS CodeStar connections",
+   "serviceId": "CodeStar connections",
+   "category": "Developer Tools",
+   "icon": "icons/codestar-connections.svg",
+   "protocol": "json",
+   "operations": 27,
+   "listOps": [
+    "ListConnections",
+    "ListHosts",
+    "ListRepositoryLinks"
+   ]
+  },
+  {
+   "id": "codestar-notifications",
+   "fullName": "AWS CodeStar Notifications",
+   "serviceId": "codestar notifications",
+   "category": "Management Tools",
+   "icon": "icons/codestar-notifications.svg",
+   "protocol": "rest-json",
+   "operations": 13,
+   "listOps": [
+    "ListNotificationRules",
+    "ListTargets"
+   ]
+  },
+  {
+   "id": "cognito-identity",
+   "fullName": "Amazon Cognito Identity",
+   "serviceId": "Cognito Identity",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/cognito-identity.svg",
+   "protocol": "json",
+   "operations": 23,
+   "listOps": []
+  },
+  {
+   "id": "cognito-idp",
+   "fullName": "Amazon Cognito Identity Provider",
+   "serviceId": "Cognito Identity Provider",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/cognito-idp.svg",
+   "protocol": "json",
+   "operations": 140,
+   "listOps": [
+    "ListUserPools"
+   ]
+  },
+  {
+   "id": "cognito-sync",
+   "fullName": "Amazon Cognito Sync",
+   "serviceId": "Cognito Sync",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/cognito-sync.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListIdentityPoolUsage"
+   ]
+  },
+  {
+   "id": "comprehend",
+   "fullName": "Amazon Comprehend",
+   "serviceId": "Comprehend",
+   "category": "Artificial Intelligence",
+   "icon": "icons/comprehend.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 85,
+   "listOps": [
+    "ListDatasets",
+    "ListDocumentClassificationJobs",
+    "ListDocumentClassifierSummaries",
+    "ListDocumentClassifiers",
+    "ListDominantLanguageDetectionJobs",
+    "ListEntitiesDetectionJobs"
+   ]
+  },
+  {
+   "id": "comprehendmedical",
+   "fullName": "AWS Comprehend Medical",
+   "serviceId": "ComprehendMedical",
+   "category": "Artificial Intelligence",
+   "icon": "icons/comprehendmedical.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 26,
+   "listOps": [
+    "ListEntitiesDetectionV2Jobs",
+    "ListICD10CMInferenceJobs",
+    "ListPHIDetectionJobs",
+    "ListRxNormInferenceJobs",
+    "ListSNOMEDCTInferenceJobs"
+   ]
+  },
+  {
+   "id": "compute-optimizer",
+   "fullName": "AWS Compute Optimizer",
+   "serviceId": "Compute Optimizer",
+   "category": "Compute",
+   "icon": "icons/compute-optimizer.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 28,
+   "listOps": [
+    "DescribeRecommendationExportJobs"
+   ]
+  },
+  {
+   "id": "compute-optimizer-automation",
+   "fullName": "Compute Optimizer Automation",
+   "serviceId": "Compute Optimizer Automation",
+   "category": "Compute",
+   "icon": "icons/compute-optimizer-automation.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 23,
+   "listOps": [
+    "ListAccounts",
+    "ListAutomationEventSummaries",
+    "ListAutomationEvents",
+    "ListAutomationRules",
+    "ListRecommendedActionSummaries",
+    "ListRecommendedActions"
+   ]
+  },
+  {
+   "id": "config",
+   "fullName": "AWS Config",
+   "serviceId": "Config Service",
+   "category": "Management Tools",
+   "icon": "icons/config.svg",
+   "protocol": "json",
+   "operations": 102,
+   "listOps": [
+    "DescribeAggregationAuthorizations",
+    "DescribeComplianceByConfigRule",
+    "DescribeComplianceByResource",
+    "DescribeConfigRules",
+    "DescribeConfigurationAggregators",
+    "DescribeConfigurationRecorders"
+   ]
+  },
+  {
+   "id": "connect",
+   "fullName": "Amazon Connect Service",
+   "serviceId": "Connect",
+   "category": "Business Applications",
+   "icon": "icons/connect.svg",
+   "protocol": "rest-json",
+   "operations": 404,
+   "listOps": [
+    "ListInstances",
+    "ListPhoneNumbersV2",
+    "ListTrafficDistributionGroups"
+   ]
+  },
+  {
+   "id": "connect-contact-lens",
+   "fullName": "Amazon Connect Contact Lens",
+   "serviceId": "Connect Contact Lens",
+   "category": "Business Applications",
+   "icon": "icons/connect-contact-lens.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "connectcampaigns",
+   "fullName": "AmazonConnectCampaignService",
+   "serviceId": "ConnectCampaigns",
+   "category": "Business Applications",
+   "icon": "icons/connectcampaigns.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "ListCampaigns"
+   ]
+  },
+  {
+   "id": "connectcampaignsv2",
+   "fullName": "AmazonConnectCampaignServiceV2",
+   "serviceId": "ConnectCampaignsV2",
+   "category": "Business Applications",
+   "icon": "icons/connectcampaignsv2.svg",
+   "protocol": "rest-json",
+   "operations": 37,
+   "listOps": [
+    "ListCampaigns"
+   ]
+  },
+  {
+   "id": "connectcases",
+   "fullName": "Amazon Connect Cases",
+   "serviceId": "ConnectCases",
+   "category": "Business Applications",
+   "icon": "icons/connectcases.svg",
+   "protocol": "rest-json",
+   "operations": 47,
+   "listOps": [
+    "ListDomains"
+   ]
+  },
+  {
+   "id": "connecthealth",
+   "fullName": "Connect Health",
+   "serviceId": "ConnectHealth",
+   "category": "Business Applications",
+   "icon": "icons/connecthealth.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListDomains"
+   ]
+  },
+  {
+   "id": "connectparticipant",
+   "fullName": "Amazon Connect Participant Service",
+   "serviceId": "ConnectParticipant",
+   "category": "Business Applications",
+   "icon": "icons/connectparticipant.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": []
+  },
+  {
+   "id": "continuum",
+   "fullName": "AWS Continuum",
+   "serviceId": "Continuum",
+   "category": "Management Tools",
+   "icon": "icons/continuum.svg",
+   "protocol": "rest-json",
+   "operations": 33,
+   "listOps": [
+    "ListCollectors",
+    "ListEnvironments",
+    "ListIntegrations"
+   ]
+  },
+  {
+   "id": "controlcatalog",
+   "fullName": "AWS Control Catalog",
+   "serviceId": "ControlCatalog",
+   "category": "Management Tools",
+   "icon": "icons/controlcatalog.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": [
+    "ListCommonControls",
+    "ListControlMappings",
+    "ListControls",
+    "ListDomains",
+    "ListObjectives"
+   ]
+  },
+  {
+   "id": "controltower",
+   "fullName": "AWS Control Tower",
+   "serviceId": "ControlTower",
+   "category": "Management Tools",
+   "icon": "icons/controltower.svg",
+   "protocol": "rest-json",
+   "operations": 28,
+   "listOps": [
+    "ListBaselines",
+    "ListControlOperations",
+    "ListEnabledBaselines",
+    "ListEnabledControls",
+    "ListLandingZoneOperations",
+    "ListLandingZones"
+   ]
+  },
+  {
+   "id": "cost-optimization-hub",
+   "fullName": "Cost Optimization Hub",
+   "serviceId": "Cost Optimization Hub",
+   "category": "Cloud Financial Management",
+   "icon": "icons/cost-optimization-hub.svg",
+   "protocol": "json",
+   "operations": 8,
+   "listOps": []
+  },
+  {
+   "id": "cur",
+   "fullName": "AWS Cost and Usage Report Service",
+   "serviceId": "Cost and Usage Report Service",
+   "category": "Cloud Financial Management",
+   "icon": "icons/cur.svg",
+   "protocol": "json",
+   "operations": 7,
+   "listOps": [
+    "DescribeReportDefinitions"
+   ]
+  },
+  {
+   "id": "customer-profiles",
+   "fullName": "Amazon Connect Customer Profiles",
+   "serviceId": "Customer Profiles",
+   "category": "Business Applications",
+   "icon": "icons/customer-profiles.svg",
+   "protocol": "rest-json",
+   "operations": 115,
+   "listOps": [
+    "ListDomains",
+    "ListRecommenderRecipes"
+   ]
+  },
+  {
+   "id": "databrew",
+   "fullName": "AWS Glue DataBrew",
+   "serviceId": "DataBrew",
+   "category": "Analytics",
+   "icon": "icons/databrew.svg",
+   "protocol": "rest-json",
+   "operations": 44,
+   "listOps": [
+    "ListDatasets",
+    "ListJobs",
+    "ListProjects",
+    "ListRecipes",
+    "ListRulesets",
+    "ListSchedules"
+   ]
+  },
+  {
+   "id": "dataexchange",
+   "fullName": "AWS Data Exchange",
+   "serviceId": "DataExchange",
+   "category": "Analytics",
+   "icon": "icons/dataexchange.svg",
+   "protocol": "rest-json",
+   "operations": 37,
+   "listOps": [
+    "ListDataGrants",
+    "ListDataSets",
+    "ListEventActions",
+    "ListJobs",
+    "ListReceivedDataGrants"
+   ]
+  },
+  {
+   "id": "datapipeline",
+   "fullName": "AWS Data Pipeline",
+   "serviceId": "Data Pipeline",
+   "category": "Analytics",
+   "icon": "icons/datapipeline.svg",
+   "protocol": "json",
+   "operations": 19,
+   "listOps": [
+    "ListPipelines"
+   ]
+  },
+  {
+   "id": "datasync",
+   "fullName": "AWS DataSync",
+   "serviceId": "DataSync",
+   "category": "Migration & Modernization",
+   "icon": "icons/datasync.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 53,
+   "listOps": [
+    "ListAgents",
+    "ListLocations",
+    "ListTaskExecutions",
+    "ListTasks"
+   ]
+  },
+  {
+   "id": "datazone",
+   "fullName": "Amazon DataZone",
+   "serviceId": "DataZone",
+   "category": "Analytics",
+   "icon": "icons/datazone.svg",
+   "protocol": "rest-json",
+   "operations": 195,
+   "listOps": [
+    "ListDomains"
+   ]
+  },
+  {
+   "id": "dax",
+   "fullName": "Amazon DynamoDB Accelerator (DAX)",
+   "serviceId": "DAX",
+   "category": "Databases",
+   "icon": "icons/dax.svg",
+   "protocol": "json",
+   "operations": 21,
+   "listOps": [
+    "DescribeClusters",
+    "DescribeDefaultParameters",
+    "DescribeEvents",
+    "DescribeParameterGroups",
+    "DescribeSubnetGroups"
+   ]
+  },
+  {
+   "id": "deadline",
+   "fullName": "AWSDeadlineCloud",
+   "serviceId": "deadline",
+   "category": "Media Services",
+   "icon": "icons/deadline.svg",
+   "protocol": "rest-json",
+   "operations": 127,
+   "listOps": [
+    "ListAvailableMeteredProducts",
+    "ListFarms",
+    "ListMonitors"
+   ]
+  },
+  {
+   "id": "detective",
+   "fullName": "Amazon Detective",
+   "serviceId": "Detective",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/detective.svg",
+   "protocol": "rest-json",
+   "operations": 29,
+   "listOps": [
+    "ListGraphs",
+    "ListInvitations",
+    "ListOrganizationAdminAccounts"
+   ]
+  },
+  {
+   "id": "devicefarm",
+   "fullName": "AWS Device Farm",
+   "serviceId": "Device Farm",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/devicefarm.svg",
+   "protocol": "json",
+   "operations": 77,
+   "listOps": [
+    "ListDeviceInstances",
+    "ListDevices",
+    "ListInstanceProfiles",
+    "ListOfferingPromotions",
+    "ListOfferingTransactions",
+    "ListProjects"
+   ]
+  },
+  {
+   "id": "devops-agent",
+   "fullName": "AWS DevOps Agent Service",
+   "serviceId": "DevOps Agent",
+   "category": "Management Tools",
+   "icon": "icons/devops-agent.svg",
+   "protocol": "rest-json",
+   "operations": 63,
+   "listOps": [
+    "ListAgentSpaces",
+    "ListPrivateConnections",
+    "ListServices"
+   ]
+  },
+  {
+   "id": "devops-guru",
+   "fullName": "Amazon DevOps Guru",
+   "serviceId": "DevOps Guru",
+   "category": "Artificial Intelligence",
+   "icon": "icons/devops-guru.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListMonitoredResources",
+    "ListNotificationChannels"
+   ]
+  },
+  {
+   "id": "directconnect",
+   "fullName": "AWS Direct Connect",
+   "serviceId": "Direct Connect",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/directconnect.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 73,
+   "listOps": [
+    "DescribeConnections",
+    "DescribeDirectConnectGatewayAssociationProposals",
+    "DescribeDirectConnectGatewayAssociations",
+    "DescribeDirectConnectGatewayAttachments",
+    "DescribeDirectConnectGateways",
+    "DescribeInterconnects"
+   ]
+  },
+  {
+   "id": "discovery",
+   "fullName": "AWS Application Discovery Service",
+   "serviceId": "Application Discovery Service",
+   "category": "Migration & Modernization",
+   "icon": "icons/discovery.svg",
+   "protocol": "json",
+   "operations": 28,
+   "listOps": [
+    "DescribeAgents",
+    "DescribeContinuousExports",
+    "DescribeExportTasks",
+    "DescribeImportTasks"
+   ]
+  },
+  {
+   "id": "dlm",
+   "fullName": "Amazon Data Lifecycle Manager",
+   "serviceId": "DLM",
+   "category": "Storage",
+   "icon": "icons/dlm.svg",
+   "protocol": "rest-json",
+   "operations": 8,
+   "listOps": []
+  },
+  {
+   "id": "dms",
+   "fullName": "AWS Database Migration Service",
+   "serviceId": "Database Migration Service",
+   "category": "Databases",
+   "icon": "icons/dms.svg",
+   "protocol": "json",
+   "operations": 119,
+   "listOps": [
+    "DescribeApplicableIndividualAssessments",
+    "DescribeCertificates",
+    "DescribeConnections",
+    "DescribeDataMigrations",
+    "DescribeDataProviders",
+    "DescribeEventCategories"
+   ]
+  },
+  {
+   "id": "docdb",
+   "fullName": "Amazon DocumentDB with MongoDB compatibility",
+   "serviceId": "DocDB",
+   "category": "Databases",
+   "icon": "icons/docdb.svg",
+   "protocol": "query",
+   "operations": 56,
+   "listOps": [
+    "DescribeCertificates",
+    "DescribeDBClusterParameterGroups",
+    "DescribeDBClusterSnapshots",
+    "DescribeDBClusters",
+    "DescribeDBInstances",
+    "DescribeDBSubnetGroups"
+   ]
+  },
+  {
+   "id": "docdb-elastic",
+   "fullName": "Amazon DocumentDB Elastic Clusters",
+   "serviceId": "DocDB Elastic",
+   "category": "Databases",
+   "icon": "icons/docdb-elastic.svg",
+   "protocol": "rest-json",
+   "operations": 19,
+   "listOps": [
+    "ListClusterSnapshots",
+    "ListClusters",
+    "ListPendingMaintenanceActions"
+   ]
+  },
+  {
+   "id": "drs",
+   "fullName": "Elastic Disaster Recovery Service",
+   "serviceId": "drs",
+   "category": "Storage",
+   "icon": "icons/drs.svg",
+   "protocol": "rest-json",
+   "operations": 70,
+   "listOps": [
+    "DescribeJobs",
+    "DescribeRecoveryInstances",
+    "DescribeSourceNetworks",
+    "DescribeSourceServers",
+    "ListRecoveryPlanExecutions",
+    "ListRecoveryPlans"
+   ]
+  },
+  {
+   "id": "ds",
+   "fullName": "AWS Directory Service",
+   "serviceId": "Directory Service",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/ds.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 80,
+   "listOps": [
+    "DescribeDirectories",
+    "DescribeEventTopics",
+    "DescribeSnapshots",
+    "DescribeTrusts",
+    "ListADAssessments",
+    "ListLogSubscriptions"
+   ]
+  },
+  {
+   "id": "ds-data",
+   "fullName": "AWS Directory Service Data",
+   "serviceId": "Directory Service Data",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/ds-data.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": []
+  },
+  {
+   "id": "dsql",
+   "fullName": "Amazon Aurora DSQL",
+   "serviceId": "DSQL",
+   "category": "Databases",
+   "icon": "icons/dsql.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListClusters"
+   ]
+  },
+  {
+   "id": "dynamodb",
+   "fullName": "Amazon DynamoDB",
+   "serviceId": "DynamoDB",
+   "category": "Databases",
+   "icon": "icons/dynamodb.svg",
+   "protocol": "json",
+   "operations": 62,
+   "listOps": [
+    "ListTables",
+    "ListBackups",
+    "ListGlobalTables"
+   ]
+  },
+  {
+   "id": "dynamodbstreams",
+   "fullName": "Amazon DynamoDB Streams",
+   "serviceId": "DynamoDB Streams",
+   "category": "Databases",
+   "icon": "icons/dynamodbstreams.svg",
+   "protocol": "json",
+   "operations": 4,
+   "listOps": [
+    "ListStreams"
+   ]
+  },
+  {
+   "id": "ebs",
+   "fullName": "Amazon Elastic Block Store",
+   "serviceId": "EBS",
+   "category": "Storage",
+   "icon": "icons/ebs.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "ec2",
+   "fullName": "Amazon Elastic Compute Cloud",
+   "serviceId": "EC2",
+   "category": "Compute",
+   "icon": "icons/ec2.svg",
+   "protocol": "ec2",
+   "operations": 811,
+   "listOps": [
+    "DescribeInstances",
+    "DescribeVpcs",
+    "DescribeSubnets",
+    "DescribeSecurityGroups",
+    "DescribeVolumes",
+    "DescribeKeyPairs"
+   ]
+  },
+  {
+   "id": "ec2-instance-connect",
+   "fullName": "AWS EC2 Instance Connect",
+   "serviceId": "EC2 Instance Connect",
+   "category": "Compute",
+   "icon": "icons/ec2-instance-connect.svg",
+   "protocol": "json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "ecr",
+   "fullName": "Amazon Elastic Container Registry",
+   "serviceId": "ECR",
+   "category": "Containers",
+   "icon": "icons/ecr.svg",
+   "protocol": "json",
+   "operations": 62,
+   "listOps": [
+    "DescribeRepositories"
+   ]
+  },
+  {
+   "id": "ecr-public",
+   "fullName": "Amazon Elastic Container Registry Public",
+   "serviceId": "ECR PUBLIC",
+   "category": "Containers",
+   "icon": "icons/ecr-public.svg",
+   "protocol": "json",
+   "operations": 23,
+   "listOps": [
+    "DescribeRegistries",
+    "DescribeRepositories"
+   ]
+  },
+  {
+   "id": "ecs",
+   "fullName": "Amazon EC2 Container Service",
+   "serviceId": "ECS",
+   "category": "Containers",
+   "icon": "icons/ecs.svg",
+   "protocol": "json",
+   "operations": 88,
+   "listOps": [
+    "ListClusters",
+    "ListTaskDefinitions"
+   ]
+  },
+  {
+   "id": "efs",
+   "fullName": "Amazon Elastic File System",
+   "serviceId": "EFS",
+   "category": "Storage",
+   "icon": "icons/efs.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "DescribeAccessPoints",
+    "DescribeFileSystems",
+    "DescribeMountTargets"
+   ]
+  },
+  {
+   "id": "eks",
+   "fullName": "Amazon Elastic Kubernetes Service",
+   "serviceId": "EKS",
+   "category": "Containers",
+   "icon": "icons/eks.svg",
+   "protocol": "rest-json",
+   "operations": 70,
+   "listOps": [
+    "ListClusters",
+    "ListEksAnywhereSubscriptions"
+   ]
+  },
+  {
+   "id": "eks-auth",
+   "fullName": "Amazon EKS Auth",
+   "serviceId": "EKS Auth",
+   "category": "Containers",
+   "icon": "icons/eks-auth.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "elasticache",
+   "fullName": "Amazon ElastiCache",
+   "serviceId": "ElastiCache",
+   "category": "Databases",
+   "icon": "icons/elasticache.svg",
+   "protocol": "query",
+   "operations": 77,
+   "listOps": [
+    "DescribeCacheClusters",
+    "DescribeCacheParameterGroups",
+    "DescribeCacheSecurityGroups",
+    "DescribeCacheSubnetGroups",
+    "DescribeEvents",
+    "DescribeGlobalReplicationGroups"
+   ]
+  },
+  {
+   "id": "elasticbeanstalk",
+   "fullName": "AWS Elastic Beanstalk",
+   "serviceId": "Elastic Beanstalk",
+   "category": "Compute",
+   "icon": "icons/elasticbeanstalk.svg",
+   "protocol": "query",
+   "operations": 47,
+   "listOps": [
+    "DescribeApplications",
+    "DescribeConfigurationOptions",
+    "DescribeEnvironmentHealth",
+    "DescribeEnvironmentManagedActionHistory",
+    "DescribeEnvironmentManagedActions",
+    "DescribeEnvironments"
+   ]
+  },
+  {
+   "id": "elb",
+   "fullName": "Elastic Load Balancing",
+   "serviceId": "Elastic Load Balancing",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/elb.svg",
+   "protocol": "query",
+   "operations": 29,
+   "listOps": [
+    "DescribeLoadBalancers"
+   ]
+  },
+  {
+   "id": "elbv2",
+   "fullName": "Elastic Load Balancing",
+   "serviceId": "Elastic Load Balancing v2",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/elbv2.svg",
+   "protocol": "query",
+   "operations": 51,
+   "listOps": [
+    "DescribeListeners",
+    "DescribeLoadBalancers",
+    "DescribeRules",
+    "DescribeTargetGroups",
+    "DescribeTrustStores"
+   ]
+  },
+  {
+   "id": "elementalinference",
+   "fullName": "AWS Elemental Inference",
+   "serviceId": "ElementalInference",
+   "category": "Artificial Intelligence",
+   "icon": "icons/elementalinference.svg",
+   "protocol": "rest-json",
+   "operations": 24,
+   "listOps": [
+    "ListDictionaries",
+    "ListFeeds"
+   ]
+  },
+  {
+   "id": "emr",
+   "fullName": "Amazon EMR",
+   "serviceId": "EMR",
+   "category": "Analytics",
+   "icon": "icons/emr.svg",
+   "protocol": "json",
+   "operations": 65,
+   "listOps": [
+    "DescribeJobFlows",
+    "DescribeReleaseLabel",
+    "ListClusters",
+    "ListNotebookExecutions",
+    "ListReleaseLabels",
+    "ListStudioSessionMappings"
+   ]
+  },
+  {
+   "id": "emr-containers",
+   "fullName": "Amazon EMR Containers",
+   "serviceId": "EMR containers",
+   "category": "Analytics",
+   "icon": "icons/emr-containers.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListVirtualClusters"
+   ]
+  },
+  {
+   "id": "emr-serverless",
+   "fullName": "EMR Serverless",
+   "serviceId": "EMR Serverless",
+   "category": "Analytics",
+   "icon": "icons/emr-serverless.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "ListApplications"
+   ]
+  },
+  {
+   "id": "endusermessaging",
+   "fullName": "AWS End User Messaging",
+   "serviceId": "EndUserMessaging",
+   "category": "Business Applications",
+   "icon": "icons/endusermessaging.svg",
+   "protocol": "rest-json",
+   "operations": 27,
+   "listOps": [
+    "ListBrandProfiles",
+    "ListJobs"
+   ]
+  },
+  {
+   "id": "entityresolution",
+   "fullName": "AWS EntityResolution",
+   "serviceId": "EntityResolution",
+   "category": "Analytics",
+   "icon": "icons/entityresolution.svg",
+   "protocol": "rest-json",
+   "operations": 38,
+   "listOps": [
+    "ListIdMappingWorkflows",
+    "ListIdNamespaces",
+    "ListMatchingWorkflows",
+    "ListProviderServices",
+    "ListSchemaMappings"
+   ]
+  },
+  {
+   "id": "es",
+   "fullName": "Amazon Elasticsearch Service",
+   "serviceId": "Elasticsearch Service",
+   "category": "Analytics",
+   "icon": "icons/es.svg",
+   "protocol": "rest-json",
+   "operations": 52,
+   "listOps": [
+    "DescribeInboundCrossClusterSearchConnections",
+    "DescribeOutboundCrossClusterSearchConnections",
+    "DescribePackages",
+    "DescribeReservedElasticsearchInstances",
+    "ListDomainNames"
+   ]
+  },
+  {
+   "id": "eventbridgev2",
+   "fullName": "Amazon EventBridgeV2",
+   "serviceId": "EventBridgeV2",
+   "category": "Application Integration",
+   "icon": "icons/eventbridgev2.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 25,
+   "listOps": [
+    "ListEventBuses",
+    "ListEventSources",
+    "ListSubscribers"
+   ]
+  },
+  {
+   "id": "events",
+   "fullName": "Amazon EventBridge",
+   "serviceId": "EventBridge",
+   "category": "Application Integration",
+   "icon": "icons/events.svg",
+   "protocol": "json",
+   "operations": 57,
+   "listOps": [
+    "ListEventBuses",
+    "ListRules",
+    "ListArchives",
+    "ListConnections"
+   ]
+  },
+  {
+   "id": "evs",
+   "fullName": "Amazon Elastic VMware Service",
+   "serviceId": "evs",
+   "category": "Compute",
+   "icon": "icons/evs.svg",
+   "protocol": "json",
+   "operations": 24,
+   "listOps": [
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "firehose",
+   "fullName": "Amazon Kinesis Firehose",
+   "serviceId": "Firehose",
+   "category": "Analytics",
+   "icon": "icons/firehose.svg",
+   "protocol": "json",
+   "operations": 12,
+   "listOps": [
+    "ListDeliveryStreams"
+   ]
+  },
+  {
+   "id": "fis",
+   "fullName": "AWS Fault Injection Simulator",
+   "serviceId": "fis",
+   "category": "Developer Tools",
+   "icon": "icons/fis.svg",
+   "protocol": "rest-json",
+   "operations": 26,
+   "listOps": [
+    "ListActions",
+    "ListExperiments"
+   ]
+  },
+  {
+   "id": "fms",
+   "fullName": "Firewall Management Service",
+   "serviceId": "FMS",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/fms.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 42,
+   "listOps": [
+    "ListAdminAccountsForOrganization",
+    "ListAdminsManagingAccount",
+    "ListMemberAccounts",
+    "ListResourceSets"
+   ]
+  },
+  {
+   "id": "forecast",
+   "fullName": "Amazon Forecast Service",
+   "serviceId": "forecast",
+   "category": "Artificial Intelligence",
+   "icon": "icons/forecast.svg",
+   "protocol": "json",
+   "operations": 63,
+   "listOps": [
+    "ListDatasetGroups",
+    "ListDatasetImportJobs",
+    "ListDatasets",
+    "ListExplainabilities",
+    "ListExplainabilityExports",
+    "ListForecastExportJobs"
+   ]
+  },
+  {
+   "id": "forecastquery",
+   "fullName": "Amazon Forecast Query Service",
+   "serviceId": "forecastquery",
+   "category": "Artificial Intelligence",
+   "icon": "icons/forecastquery.svg",
+   "protocol": "json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "frauddetector",
+   "fullName": "Amazon Fraud Detector",
+   "serviceId": "FraudDetector",
+   "category": "Artificial Intelligence",
+   "icon": "icons/frauddetector.svg",
+   "protocol": "json",
+   "operations": 73,
+   "listOps": [
+    "ListEventPredictions"
+   ]
+  },
+  {
+   "id": "freetier",
+   "fullName": "AWS Free Tier",
+   "serviceId": "FreeTier",
+   "category": "Cloud Financial Management",
+   "icon": "icons/freetier.svg",
+   "protocol": "json",
+   "operations": 5,
+   "listOps": [
+    "ListAccountActivities"
+   ]
+  },
+  {
+   "id": "fsx",
+   "fullName": "Amazon FSx",
+   "serviceId": "FSx",
+   "category": "Storage",
+   "icon": "icons/fsx.svg",
+   "protocol": "json",
+   "operations": 48,
+   "listOps": [
+    "DescribeBackups",
+    "DescribeDataRepositoryAssociations",
+    "DescribeDataRepositoryTasks",
+    "DescribeFileCaches",
+    "DescribeFileSystems",
+    "DescribeS3AccessPointAttachments"
+   ]
+  },
+  {
+   "id": "gamelift",
+   "fullName": "Amazon GameLift",
+   "serviceId": "GameLift",
+   "category": "Games",
+   "icon": "icons/gamelift.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 120,
+   "listOps": [
+    "DescribeFleetAttributes",
+    "DescribeFleetCapacity",
+    "DescribeFleetUtilization",
+    "DescribeGameSessionDetails",
+    "DescribeGameSessionQueues",
+    "DescribeGameSessions"
+   ]
+  },
+  {
+   "id": "gameliftstreams",
+   "fullName": "Amazon GameLift Streams",
+   "serviceId": "GameLiftStreams",
+   "category": "Games",
+   "icon": "icons/gameliftstreams.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListApplications",
+    "ListStreamGroups",
+    "ListStreamSessionsByAccount",
+    "ListStreamUrls"
+   ]
+  },
+  {
+   "id": "geo-maps",
+   "fullName": "Amazon Location Service Maps V2",
+   "serviceId": "Geo Maps",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/geo-maps.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "geo-places",
+   "fullName": "Amazon Location Service Places V2",
+   "serviceId": "Geo Places",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/geo-places.svg",
+   "protocol": "rest-json",
+   "operations": 7,
+   "listOps": []
+  },
+  {
+   "id": "geo-routes",
+   "fullName": "Amazon Location Service Routes V2",
+   "serviceId": "Geo Routes",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/geo-routes.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "glacier",
+   "fullName": "Amazon Glacier",
+   "serviceId": "Glacier",
+   "category": "Storage",
+   "icon": "icons/glacier.svg",
+   "protocol": "rest-json",
+   "operations": 33,
+   "listOps": []
+  },
+  {
+   "id": "globalaccelerator",
+   "fullName": "AWS Global Accelerator",
+   "serviceId": "Global Accelerator",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/globalaccelerator.svg",
+   "protocol": "json",
+   "operations": 56,
+   "listOps": [
+    "ListAccelerators",
+    "ListByoipCidrs",
+    "ListCrossAccountAttachments",
+    "ListCrossAccountResourceAccounts",
+    "ListCustomRoutingAccelerators"
+   ]
+  },
+  {
+   "id": "glue",
+   "fullName": "AWS Glue",
+   "serviceId": "Glue",
+   "category": "Analytics",
+   "icon": "icons/glue.svg",
+   "protocol": "json",
+   "operations": 314,
+   "listOps": [
+    "DescribeInboundIntegrations",
+    "DescribeIntegrations",
+    "ListBlueprints",
+    "ListColumnStatisticsTaskRuns",
+    "ListCrawlers",
+    "ListDataQualityEvaluationConfigs"
+   ]
+  },
+  {
+   "id": "grafana",
+   "fullName": "Amazon Managed Grafana",
+   "serviceId": "grafana",
+   "category": "Management Tools",
+   "icon": "icons/grafana.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListWorkspaces"
+   ]
+  },
+  {
+   "id": "greengrass",
+   "fullName": "AWS Greengrass",
+   "serviceId": "Greengrass",
+   "category": "Internet of Things",
+   "icon": "icons/greengrass.svg",
+   "protocol": "rest-json",
+   "operations": 92,
+   "listOps": [
+    "ListBulkDeployments",
+    "ListConnectorDefinitions",
+    "ListCoreDefinitions",
+    "ListDeviceDefinitions",
+    "ListFunctionDefinitions",
+    "ListGroups"
+   ]
+  },
+  {
+   "id": "greengrassv2",
+   "fullName": "AWS IoT Greengrass V2",
+   "serviceId": "GreengrassV2",
+   "category": "Internet of Things",
+   "icon": "icons/greengrassv2.svg",
+   "protocol": "rest-json",
+   "operations": 29,
+   "listOps": [
+    "ListComponents",
+    "ListCoreDevices",
+    "ListDeployments"
+   ]
+  },
+  {
+   "id": "groundstation",
+   "fullName": "AWS Ground Station",
+   "serviceId": "GroundStation",
+   "category": "Satellite",
+   "icon": "icons/groundstation.svg",
+   "protocol": "rest-json",
+   "operations": 40,
+   "listOps": [
+    "ListConfigs",
+    "ListDataflowEndpointGroups",
+    "ListGroundStations",
+    "ListMissionProfiles",
+    "ListSatellites"
+   ]
+  },
+  {
+   "id": "guardduty",
+   "fullName": "Amazon GuardDuty",
+   "serviceId": "GuardDuty",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/guardduty.svg",
+   "protocol": "rest-json",
+   "operations": 102,
+   "listOps": [
+    "ListCustomDetectionRuleAssociations",
+    "ListCustomDetectionRules",
+    "ListDetectors",
+    "ListInvitations",
+    "ListMalwareProtectionPlans",
+    "ListMalwareScans"
+   ]
+  },
+  {
+   "id": "health",
+   "fullName": "AWS Health APIs and Notifications",
+   "serviceId": "Health",
+   "category": "Management Tools",
+   "icon": "icons/health.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 15,
+   "listOps": [
+    "DescribeAffectedEntitiesForOrganization",
+    "DescribeEntityAggregates",
+    "DescribeEvents",
+    "DescribeEventsForOrganization",
+    "DescribeServiceLifecycle"
+   ]
+  },
+  {
+   "id": "healthlake",
+   "fullName": "Amazon HealthLake",
+   "serviceId": "HealthLake",
+   "category": "Artificial Intelligence",
+   "icon": "icons/healthlake.svg",
+   "protocol": "json",
+   "operations": 26,
+   "listOps": [
+    "ListDataTransformationJobs",
+    "ListFHIRDatastores"
+   ]
+  },
+  {
+   "id": "iam",
+   "fullName": "AWS Identity and Access Management",
+   "serviceId": "IAM",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/iam.svg",
+   "protocol": "query",
+   "operations": 180,
+   "listOps": [
+    "ListRoles",
+    "ListUsers",
+    "ListPolicies",
+    "ListGroups"
+   ]
+  },
+  {
+   "id": "iam-toolbox",
+   "fullName": "IAM Toolbox (Preview)",
+   "serviceId": "IAM Toolbox",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/iam-toolbox.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "identitystore",
+   "fullName": "AWS SSO Identity Store",
+   "serviceId": "identitystore",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/identitystore.svg",
+   "protocol": "json",
+   "operations": 22,
+   "listOps": [
+    "ListIdentityStores"
+   ]
+  },
+  {
+   "id": "imagebuilder",
+   "fullName": "EC2 Image Builder",
+   "serviceId": "imagebuilder",
+   "category": "Compute",
+   "icon": "icons/imagebuilder.svg",
+   "protocol": "rest-json",
+   "operations": 77,
+   "listOps": [
+    "ListComponents",
+    "ListContainerRecipes",
+    "ListImagePipelines",
+    "ListImageRecipes",
+    "ListImageScanFindingAggregations",
+    "ListImageScanFindings"
+   ]
+  },
+  {
+   "id": "importexport",
+   "fullName": "AWS Import/Export",
+   "serviceId": "ImportExport",
+   "category": "Storage",
+   "icon": "icons/importexport.svg",
+   "protocol": "query",
+   "operations": 6,
+   "listOps": [
+    "ListJobs"
+   ]
+  },
+  {
+   "id": "inspector",
+   "fullName": "Amazon Inspector",
+   "serviceId": "Inspector",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/inspector.svg",
+   "protocol": "json",
+   "operations": 37,
+   "listOps": [
+    "ListAssessmentRuns",
+    "ListAssessmentTargets",
+    "ListEventSubscriptions",
+    "ListFindings",
+    "ListRulesPackages"
+   ]
+  },
+  {
+   "id": "inspector-scan",
+   "fullName": "Inspector Scan",
+   "serviceId": "Inspector Scan",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/inspector-scan.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "inspector2",
+   "fullName": "Inspector2",
+   "serviceId": "Inspector2",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/inspector2.svg",
+   "protocol": "rest-json",
+   "operations": 84,
+   "listOps": [
+    "ListAccountPermissions",
+    "ListCisScans",
+    "ListCodeSecurityIntegrations",
+    "ListConnectors",
+    "ListCoverage",
+    "ListCoverageStatistics"
+   ]
+  },
+  {
+   "id": "interconnect",
+   "fullName": "Interconnect",
+   "serviceId": "Interconnect",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/interconnect.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 13,
+   "listOps": [
+    "ListConnections",
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "internetmonitor",
+   "fullName": "Amazon CloudWatch Internet Monitor",
+   "serviceId": "InternetMonitor",
+   "category": "Management Tools",
+   "icon": "icons/internetmonitor.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListInternetEvents",
+    "ListMonitors"
+   ]
+  },
+  {
+   "id": "invoicing",
+   "fullName": "AWS Invoicing",
+   "serviceId": "Invoicing",
+   "category": "Cloud Financial Management",
+   "icon": "icons/invoicing.svg",
+   "protocol": "json",
+   "operations": 21,
+   "listOps": [
+    "ListInvoiceUnits",
+    "ListProcurementPortalPreferences",
+    "ListProcurementPortals"
+   ]
+  },
+  {
+   "id": "iot",
+   "fullName": "AWS IoT",
+   "serviceId": "IoT",
+   "category": "Internet of Things",
+   "icon": "icons/iot.svg",
+   "protocol": "rest-json",
+   "operations": 272,
+   "listOps": [
+    "ListActiveViolations",
+    "ListAuditFindings",
+    "ListAuditSuppressions",
+    "ListAuthorizers",
+    "ListBillingGroups",
+    "ListCACertificates"
+   ]
+  },
+  {
+   "id": "iot-data",
+   "fullName": "AWS IoT Data Plane",
+   "serviceId": "IoT Data Plane",
+   "category": "Internet of Things",
+   "icon": "icons/iot-data.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListRetainedMessages"
+   ]
+  },
+  {
+   "id": "iot-jobs-data",
+   "fullName": "AWS IoT Jobs Data Plane",
+   "serviceId": "IoT Jobs Data Plane",
+   "category": "Internet of Things",
+   "icon": "icons/iot-jobs-data.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "iot-managed-integrations",
+   "fullName": "Managed integrations for AWS IoT Device Management",
+   "serviceId": "IoT Managed Integrations",
+   "category": "Internet of Things",
+   "icon": "icons/iot-managed-integrations.svg",
+   "protocol": "rest-json",
+   "operations": 83,
+   "listOps": [
+    "ListAccountAssociations",
+    "ListCloudConnectors",
+    "ListConnectorDestinations",
+    "ListCredentialLockers",
+    "ListDestinations",
+    "ListDeviceDiscoveries"
+   ]
+  },
+  {
+   "id": "iotdeviceadvisor",
+   "fullName": "AWS IoT Core Device Advisor",
+   "serviceId": "IotDeviceAdvisor",
+   "category": "Internet of Things",
+   "icon": "icons/iotdeviceadvisor.svg",
+   "protocol": "rest-json",
+   "operations": 14,
+   "listOps": [
+    "ListSuiteDefinitions",
+    "ListSuiteRuns"
+   ]
+  },
+  {
+   "id": "iotfleetwise",
+   "fullName": "AWS IoT FleetWise",
+   "serviceId": "IoTFleetWise",
+   "category": "Internet of Things",
+   "icon": "icons/iotfleetwise.svg",
+   "protocol": "json",
+   "operations": 57,
+   "listOps": [
+    "ListCampaigns",
+    "ListDecoderManifests",
+    "ListFleets",
+    "ListModelManifests",
+    "ListSignalCatalogs",
+    "ListVehicles"
+   ]
+  },
+  {
+   "id": "iotsecuretunneling",
+   "fullName": "AWS IoT Secure Tunneling",
+   "serviceId": "IoTSecureTunneling",
+   "category": "Internet of Things",
+   "icon": "icons/iotsecuretunneling.svg",
+   "protocol": "json",
+   "operations": 8,
+   "listOps": [
+    "ListTunnels"
+   ]
+  },
+  {
+   "id": "iotsitewise",
+   "fullName": "AWS IoT SiteWise",
+   "serviceId": "IoTSiteWise",
+   "category": "Internet of Things",
+   "icon": "icons/iotsitewise.svg",
+   "protocol": "rest-json",
+   "operations": 149,
+   "listOps": [
+    "ListApplications",
+    "ListAssetModels",
+    "ListAssets",
+    "ListBulkImportJobs",
+    "ListComputationModels",
+    "ListGateways"
+   ]
+  },
+  {
+   "id": "iotthingsgraph",
+   "fullName": "AWS IoT Things Graph",
+   "serviceId": "IoTThingsGraph",
+   "category": "Internet of Things",
+   "icon": "icons/iotthingsgraph.svg",
+   "protocol": "json",
+   "operations": 35,
+   "listOps": []
+  },
+  {
+   "id": "iottwinmaker",
+   "fullName": "AWS IoT TwinMaker",
+   "serviceId": "IoTTwinMaker",
+   "category": "Internet of Things",
+   "icon": "icons/iottwinmaker.svg",
+   "protocol": "rest-json",
+   "operations": 40,
+   "listOps": [
+    "ListWorkspaces"
+   ]
+  },
+  {
+   "id": "iotwireless",
+   "fullName": "AWS IoT Wireless",
+   "serviceId": "IoT Wireless",
+   "category": "Internet of Things",
+   "icon": "icons/iotwireless.svg",
+   "protocol": "rest-json",
+   "operations": 112,
+   "listOps": [
+    "ListDestinations",
+    "ListDeviceProfiles",
+    "ListFuotaTasks",
+    "ListMulticastGroups",
+    "ListPartnerAccounts",
+    "ListServiceProfiles"
+   ]
+  },
+  {
+   "id": "ivs",
+   "fullName": "Amazon Interactive Video Service",
+   "serviceId": "ivs",
+   "category": "Media Services",
+   "icon": "icons/ivs.svg",
+   "protocol": "rest-json",
+   "operations": 46,
+   "listOps": [
+    "ListChannels",
+    "ListPlaybackKeyPairs",
+    "ListStreams"
+   ]
+  },
+  {
+   "id": "ivs-realtime",
+   "fullName": "Amazon Interactive Video Service RealTime",
+   "serviceId": "IVS RealTime",
+   "category": "Media Services",
+   "icon": "icons/ivs-realtime.svg",
+   "protocol": "rest-json",
+   "operations": 40,
+   "listOps": [
+    "ListCompositions",
+    "ListPublicKeys",
+    "ListStages"
+   ]
+  },
+  {
+   "id": "ivschat",
+   "fullName": "Amazon Interactive Video Service Chat",
+   "serviceId": "ivschat",
+   "category": "Media Services",
+   "icon": "icons/ivschat.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListRooms"
+   ]
+  },
+  {
+   "id": "kafka",
+   "fullName": "Managed Streaming for Kafka",
+   "serviceId": "Kafka",
+   "category": "Analytics",
+   "icon": "icons/kafka.svg",
+   "protocol": "rest-json",
+   "operations": 64,
+   "listOps": [
+    "ListClusters",
+    "ListClustersV2",
+    "ListReplicators",
+    "ListVpcConnections"
+   ]
+  },
+  {
+   "id": "kafkaconnect",
+   "fullName": "Managed Streaming for Kafka Connect",
+   "serviceId": "KafkaConnect",
+   "category": "Analytics",
+   "icon": "icons/kafkaconnect.svg",
+   "protocol": "rest-json",
+   "operations": 21,
+   "listOps": [
+    "ListConnectors",
+    "ListCustomPlugins"
+   ]
+  },
+  {
+   "id": "kendra",
+   "fullName": "AWSKendraFrontendService",
+   "serviceId": "kendra",
+   "category": "Artificial Intelligence",
+   "icon": "icons/kendra.svg",
+   "protocol": "json",
+   "operations": 66,
+   "listOps": [
+    "ListIndices"
+   ]
+  },
+  {
+   "id": "kendra-ranking",
+   "fullName": "Amazon Kendra Intelligent Ranking",
+   "serviceId": "Kendra Ranking",
+   "category": "Artificial Intelligence",
+   "icon": "icons/kendra-ranking.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 9,
+   "listOps": [
+    "ListRescoreExecutionPlans"
+   ]
+  },
+  {
+   "id": "keyspaces",
+   "fullName": "Amazon Keyspaces",
+   "serviceId": "Keyspaces",
+   "category": "Databases",
+   "icon": "icons/keyspaces.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 19,
+   "listOps": [
+    "ListKeyspaces"
+   ]
+  },
+  {
+   "id": "keyspacesstreams",
+   "fullName": "Amazon Keyspaces Streams",
+   "serviceId": "KeyspacesStreams",
+   "category": "Databases",
+   "icon": "icons/keyspacesstreams.svg",
+   "protocol": "json",
+   "operations": 4,
+   "listOps": [
+    "ListStreams"
+   ]
+  },
+  {
+   "id": "kinesis",
+   "fullName": "Amazon Kinesis",
+   "serviceId": "Kinesis",
+   "category": "Analytics",
+   "icon": "icons/kinesis.svg",
+   "protocol": "json",
+   "operations": 45,
+   "listOps": [
+    "ListChannels",
+    "ListShards",
+    "ListStreams",
+    "ListTagsForStream"
+   ]
+  },
+  {
+   "id": "kinesis-video-archived-media",
+   "fullName": "Amazon Kinesis Video Streams Archived Media",
+   "serviceId": "Kinesis Video Archived Media",
+   "category": "Analytics",
+   "icon": "icons/kinesis-video-archived-media.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": [
+    "ListFragments"
+   ]
+  },
+  {
+   "id": "kinesis-video-media",
+   "fullName": "Amazon Kinesis Video Streams Media",
+   "serviceId": "Kinesis Video Media",
+   "category": "Analytics",
+   "icon": "icons/kinesis-video-media.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "kinesis-video-signaling",
+   "fullName": "Amazon Kinesis Video Signaling Channels",
+   "serviceId": "Kinesis Video Signaling",
+   "category": "Analytics",
+   "icon": "icons/kinesis-video-signaling.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "kinesis-video-webrtc-storage",
+   "fullName": "Amazon Kinesis Video WebRTC Storage",
+   "serviceId": "Kinesis Video WebRTC Storage",
+   "category": "Analytics",
+   "icon": "icons/kinesis-video-webrtc-storage.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "kinesisanalytics",
+   "fullName": "Amazon Kinesis Analytics",
+   "serviceId": "Kinesis Analytics",
+   "category": "Analytics",
+   "icon": "icons/kinesisanalytics.svg",
+   "protocol": "json",
+   "operations": 20,
+   "listOps": [
+    "ListApplications"
+   ]
+  },
+  {
+   "id": "kinesisanalyticsv2",
+   "fullName": "Amazon Kinesis Analytics",
+   "serviceId": "Kinesis Analytics V2",
+   "category": "Analytics",
+   "icon": "icons/kinesisanalyticsv2.svg",
+   "protocol": "json",
+   "operations": 41,
+   "listOps": [
+    "ListApplications",
+    "ListSnapshots"
+   ]
+  },
+  {
+   "id": "kinesisvideo",
+   "fullName": "Amazon Kinesis Video Streams",
+   "serviceId": "Kinesis Video",
+   "category": "Analytics",
+   "icon": "icons/kinesisvideo.svg",
+   "protocol": "rest-json",
+   "operations": 32,
+   "listOps": [
+    "ListSignalingChannels",
+    "ListStreams"
+   ]
+  },
+  {
+   "id": "kms",
+   "fullName": "AWS Key Management Service",
+   "serviceId": "KMS",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/kms.svg",
+   "protocol": "json",
+   "operations": 56,
+   "listOps": [
+    "ListKeys",
+    "ListAliases"
+   ]
+  },
+  {
+   "id": "lakeformation",
+   "fullName": "AWS Lake Formation",
+   "serviceId": "LakeFormation",
+   "category": "Analytics",
+   "icon": "icons/lakeformation.svg",
+   "protocol": "rest-json",
+   "operations": 71,
+   "listOps": [
+    "ListDataCellsFilter",
+    "ListLFTagExpressions",
+    "ListLakeFormationOptIns",
+    "ListPermissions",
+    "ListRLSPolicyAttachments",
+    "ListResources"
+   ]
+  },
+  {
+   "id": "lambda",
+   "fullName": "AWS Lambda",
+   "serviceId": "Lambda",
+   "category": "Compute",
+   "icon": "icons/lambda.svg",
+   "protocol": "rest-json",
+   "operations": 88,
+   "listOps": [
+    "ListFunctions",
+    "ListLayers",
+    "ListEventSourceMappings"
+   ]
+  },
+  {
+   "id": "lambda-core",
+   "fullName": "AWS Lambda Core",
+   "serviceId": "Lambda Core",
+   "category": "Compute",
+   "icon": "icons/lambda-core.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": [
+    "ListNetworkConnectors"
+   ]
+  },
+  {
+   "id": "lambda-microvms",
+   "fullName": "Lambda MicroVMs",
+   "serviceId": "Lambda Microvms",
+   "category": "Compute",
+   "icon": "icons/lambda-microvms.svg",
+   "protocol": "rest-json",
+   "operations": 24,
+   "listOps": [
+    "ListManagedMicrovmImages",
+    "ListMicrovmImages",
+    "ListMicrovms"
+   ]
+  },
+  {
+   "id": "lambda-web",
+   "fullName": "Lambda Web",
+   "serviceId": "Lambda Web",
+   "category": "Compute",
+   "icon": "icons/lambda-web.svg",
+   "protocol": "rest-json",
+   "operations": 20,
+   "listOps": [
+    "ListWebFunctions"
+   ]
+  },
+  {
+   "id": "launch-wizard",
+   "fullName": "AWS Launch Wizard",
+   "serviceId": "Launch Wizard",
+   "category": "Management Tools",
+   "icon": "icons/launch-wizard.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": [
+    "ListDeployments",
+    "ListWorkloads"
+   ]
+  },
+  {
+   "id": "lex-models",
+   "fullName": "Amazon Lex Model Building Service",
+   "serviceId": "Lex Model Building Service",
+   "category": "Artificial Intelligence",
+   "icon": "icons/lex-models.svg",
+   "protocol": "rest-json",
+   "operations": 42,
+   "listOps": []
+  },
+  {
+   "id": "lex-runtime",
+   "fullName": "Amazon Lex Runtime Service",
+   "serviceId": "Lex Runtime Service",
+   "category": "Artificial Intelligence",
+   "icon": "icons/lex-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "lexv2-models",
+   "fullName": "Amazon Lex Model Building V2",
+   "serviceId": "Lex Models V2",
+   "category": "Artificial Intelligence",
+   "icon": "icons/lexv2-models.svg",
+   "protocol": "rest-json",
+   "operations": 107,
+   "listOps": [
+    "ListBots",
+    "ListExports",
+    "ListImports",
+    "ListTestExecutions",
+    "ListTestSets"
+   ]
+  },
+  {
+   "id": "lexv2-runtime",
+   "fullName": "Amazon Lex Runtime V2",
+   "serviceId": "Lex Runtime V2",
+   "category": "Artificial Intelligence",
+   "icon": "icons/lexv2-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "license-manager",
+   "fullName": "AWS License Manager",
+   "serviceId": "License Manager",
+   "category": "Management Tools",
+   "icon": "icons/license-manager.svg",
+   "protocol": "json",
+   "operations": 62,
+   "listOps": [
+    "ListDistributedGrants",
+    "ListLicenseAssetGroups",
+    "ListLicenseAssetRulesets",
+    "ListLicenseConfigurationsForOrganization",
+    "ListLicenseConversionTasks",
+    "ListLicenseManagerReportGenerators"
+   ]
+  },
+  {
+   "id": "license-manager-linux-subscriptions",
+   "fullName": "AWS License Manager Linux Subscriptions",
+   "serviceId": "License Manager Linux Subscriptions",
+   "category": "Management Tools",
+   "icon": "icons/license-manager-linux-subscriptions.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListLinuxSubscriptionInstances",
+    "ListLinuxSubscriptions",
+    "ListRegisteredSubscriptionProviders"
+   ]
+  },
+  {
+   "id": "license-manager-user-subscriptions",
+   "fullName": "AWS License Manager User Subscriptions",
+   "serviceId": "License Manager User Subscriptions",
+   "category": "Management Tools",
+   "icon": "icons/license-manager-user-subscriptions.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListIdentityProviders",
+    "ListInstances"
+   ]
+  },
+  {
+   "id": "lightsail",
+   "fullName": "Amazon Lightsail",
+   "serviceId": "Lightsail",
+   "category": "Compute",
+   "icon": "icons/lightsail.svg",
+   "protocol": "json",
+   "operations": 162,
+   "listOps": []
+  },
+  {
+   "id": "location",
+   "fullName": "Amazon Location Service",
+   "serviceId": "Location",
+   "category": "Front-End Web & Mobile",
+   "icon": "icons/location.svg",
+   "protocol": "rest-json",
+   "operations": 64,
+   "listOps": [
+    "ListGeofenceCollections",
+    "ListJobs",
+    "ListKeys",
+    "ListMaps",
+    "ListPlaceIndexes",
+    "ListRouteCalculators"
+   ]
+  },
+  {
+   "id": "logs",
+   "fullName": "Amazon CloudWatch Logs",
+   "serviceId": "CloudWatch Logs",
+   "category": "Management Tools",
+   "icon": "icons/logs.svg",
+   "protocol": "json",
+   "operations": 118,
+   "listOps": [
+    "DescribeLogGroups"
+   ]
+  },
+  {
+   "id": "lookoutequipment",
+   "fullName": "Amazon Lookout for Equipment",
+   "serviceId": "LookoutEquipment",
+   "category": "Artificial Intelligence",
+   "icon": "icons/lookoutequipment.svg",
+   "protocol": "json",
+   "operations": 49,
+   "listOps": [
+    "ListDataIngestionJobs",
+    "ListDatasets",
+    "ListInferenceSchedulers",
+    "ListLabelGroups",
+    "ListModels",
+    "ListRetrainingSchedulers"
+   ]
+  },
+  {
+   "id": "m2",
+   "fullName": "AWSMainframeModernization",
+   "serviceId": "m2",
+   "category": "Migration & Modernization",
+   "icon": "icons/m2.svg",
+   "protocol": "rest-json",
+   "operations": 37,
+   "listOps": [
+    "ListApplications",
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "machinelearning",
+   "fullName": "Amazon Machine Learning",
+   "serviceId": "Machine Learning",
+   "category": "Artificial Intelligence",
+   "icon": "icons/machinelearning.svg",
+   "protocol": "json",
+   "operations": 28,
+   "listOps": [
+    "DescribeBatchPredictions",
+    "DescribeDataSources",
+    "DescribeEvaluations",
+    "DescribeMLModels"
+   ]
+  },
+  {
+   "id": "macie2",
+   "fullName": "Amazon Macie 2",
+   "serviceId": "Macie2",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/macie2.svg",
+   "protocol": "rest-json",
+   "operations": 81,
+   "listOps": [
+    "DescribeBuckets",
+    "ListAllowLists",
+    "ListAutomatedDiscoveryAccounts",
+    "ListClassificationJobs",
+    "ListClassificationScopes",
+    "ListCustomDataIdentifiers"
+   ]
+  },
+  {
+   "id": "mailmanager",
+   "fullName": "MailManager",
+   "serviceId": "MailManager",
+   "category": "Business Applications",
+   "icon": "icons/mailmanager.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 60,
+   "listOps": [
+    "ListAddonInstances",
+    "ListAddonSubscriptions",
+    "ListAddressLists",
+    "ListArchives",
+    "ListIngressPoints",
+    "ListRelays"
+   ]
+  },
+  {
+   "id": "managedblockchain",
+   "fullName": "Amazon Managed Blockchain",
+   "serviceId": "ManagedBlockchain",
+   "category": "Blockchain",
+   "icon": "icons/managedblockchain.svg",
+   "protocol": "rest-json",
+   "operations": 27,
+   "listOps": [
+    "ListAccessors",
+    "ListInvitations",
+    "ListNetworks"
+   ]
+  },
+  {
+   "id": "managedblockchain-query",
+   "fullName": "Amazon Managed Blockchain Query",
+   "serviceId": "ManagedBlockchain Query",
+   "category": "Blockchain",
+   "icon": "icons/managedblockchain-query.svg",
+   "protocol": "rest-json",
+   "operations": 9,
+   "listOps": []
+  },
+  {
+   "id": "marketplace-agreement",
+   "fullName": "AWS Marketplace Agreement Service",
+   "serviceId": "Marketplace Agreement",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-agreement.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 25,
+   "listOps": [
+    "ListAgreementCharges",
+    "ListBillingAdjustmentRequests"
+   ]
+  },
+  {
+   "id": "marketplace-catalog",
+   "fullName": "AWS Marketplace Catalog Service",
+   "serviceId": "Marketplace Catalog",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-catalog.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": []
+  },
+  {
+   "id": "marketplace-deployment",
+   "fullName": "AWS Marketplace Deployment Service",
+   "serviceId": "Marketplace Deployment",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-deployment.svg",
+   "protocol": "rest-json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "marketplace-discovery",
+   "fullName": "AWS Marketplace Discovery",
+   "serviceId": "Marketplace Discovery",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-discovery.svg",
+   "protocol": "rest-json",
+   "operations": 9,
+   "listOps": [
+    "ListPurchaseOptions"
+   ]
+  },
+  {
+   "id": "marketplace-entitlement",
+   "fullName": "AWS Marketplace Entitlement Service",
+   "serviceId": "Marketplace Entitlement Service",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-entitlement.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "marketplace-reporting",
+   "fullName": "AWS Marketplace Reporting Service",
+   "serviceId": "Marketplace Reporting",
+   "category": "Marketplace",
+   "icon": "icons/marketplace-reporting.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "marketplacecommerceanalytics",
+   "fullName": "AWS Marketplace Commerce Analytics",
+   "serviceId": "Marketplace Commerce Analytics",
+   "category": "Marketplace",
+   "icon": "icons/marketplacecommerceanalytics.svg",
+   "protocol": "json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "mediaconnect",
+   "fullName": "AWS MediaConnect",
+   "serviceId": "MediaConnect",
+   "category": "Media Services",
+   "icon": "icons/mediaconnect.svg",
+   "protocol": "rest-json",
+   "operations": 96,
+   "listOps": [
+    "ListBridges",
+    "ListEntitlements",
+    "ListFlows",
+    "ListGatewayInstances",
+    "ListGateways",
+    "ListReservations"
+   ]
+  },
+  {
+   "id": "mediaconvert",
+   "fullName": "AWS Elemental MediaConvert",
+   "serviceId": "MediaConvert",
+   "category": "Media Services",
+   "icon": "icons/mediaconvert.svg",
+   "protocol": "rest-json",
+   "operations": 34,
+   "listOps": [
+    "ListJobs",
+    "ListPresets",
+    "ListQueues"
+   ]
+  },
+  {
+   "id": "medialive",
+   "fullName": "AWS Elemental MediaLive",
+   "serviceId": "MediaLive",
+   "category": "Media Services",
+   "icon": "icons/medialive.svg",
+   "protocol": "rest-json",
+   "operations": 123,
+   "listOps": [
+    "ListChannels",
+    "ListInputDevices",
+    "ListInputSecurityGroups",
+    "ListInputs",
+    "ListMultiplexes",
+    "ListReservations"
+   ]
+  },
+  {
+   "id": "mediapackage",
+   "fullName": "AWS Elemental MediaPackage",
+   "serviceId": "MediaPackage",
+   "category": "Media Services",
+   "icon": "icons/mediapackage.svg",
+   "protocol": "rest-json",
+   "operations": 19,
+   "listOps": [
+    "ListChannels",
+    "ListHarvestJobs"
+   ]
+  },
+  {
+   "id": "mediapackage-vod",
+   "fullName": "AWS Elemental MediaPackage VOD",
+   "serviceId": "MediaPackage Vod",
+   "category": "Media Services",
+   "icon": "icons/mediapackage-vod.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListAssets",
+    "ListPackagingGroups"
+   ]
+  },
+  {
+   "id": "mediapackagev2",
+   "fullName": "AWS Elemental MediaPackage v2",
+   "serviceId": "MediaPackageV2",
+   "category": "Media Services",
+   "icon": "icons/mediapackagev2.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListChannelGroups"
+   ]
+  },
+  {
+   "id": "mediastore",
+   "fullName": "AWS Elemental MediaStore",
+   "serviceId": "MediaStore",
+   "category": "Media Services",
+   "icon": "icons/mediastore.svg",
+   "protocol": "json",
+   "operations": 21,
+   "listOps": [
+    "ListContainers"
+   ]
+  },
+  {
+   "id": "mediastore-data",
+   "fullName": "AWS Elemental MediaStore Data Plane",
+   "serviceId": "MediaStore Data",
+   "category": "Media Services",
+   "icon": "icons/mediastore-data.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": [
+    "ListItems"
+   ]
+  },
+  {
+   "id": "mediatailor",
+   "fullName": "AWS MediaTailor",
+   "serviceId": "MediaTailor",
+   "category": "Media Services",
+   "icon": "icons/mediatailor.svg",
+   "protocol": "rest-json",
+   "operations": 48,
+   "listOps": [
+    "ListChannels",
+    "ListFunctions",
+    "ListSourceLocations"
+   ]
+  },
+  {
+   "id": "medical-imaging",
+   "fullName": "AWS Health Imaging",
+   "serviceId": "Medical Imaging",
+   "category": "Artificial Intelligence",
+   "icon": "icons/medical-imaging.svg",
+   "protocol": "rest-json",
+   "operations": 18,
+   "listOps": [
+    "ListDatastores"
+   ]
+  },
+  {
+   "id": "memorydb",
+   "fullName": "Amazon MemoryDB",
+   "serviceId": "MemoryDB",
+   "category": "Databases",
+   "icon": "icons/memorydb.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 45,
+   "listOps": [
+    "DescribeACLs",
+    "DescribeClusters",
+    "DescribeEvents",
+    "DescribeMultiRegionClusters",
+    "DescribeMultiRegionParameterGroups",
+    "DescribeParameterGroups"
+   ]
+  },
+  {
+   "id": "meteringmarketplace",
+   "fullName": "AWSMarketplace Metering",
+   "serviceId": "Marketplace Metering",
+   "category": "Marketplace",
+   "icon": "icons/meteringmarketplace.svg",
+   "protocol": "json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "mgh",
+   "fullName": "AWS Migration Hub",
+   "serviceId": "Migration Hub",
+   "category": "Migration & Modernization",
+   "icon": "icons/mgh.svg",
+   "protocol": "json",
+   "operations": 21,
+   "listOps": [
+    "ListApplicationStates",
+    "ListMigrationTasks",
+    "ListProgressUpdateStreams"
+   ]
+  },
+  {
+   "id": "mgn",
+   "fullName": "Application Migration Service",
+   "serviceId": "mgn",
+   "category": "Migration & Modernization",
+   "icon": "icons/mgn.svg",
+   "protocol": "rest-json",
+   "operations": 95,
+   "listOps": [
+    "DescribeJobs",
+    "DescribeSourceServers",
+    "DescribeVcenterClients",
+    "ListApplications",
+    "ListConnectors",
+    "ListExports"
+   ]
+  },
+  {
+   "id": "migration-hub-refactor-spaces",
+   "fullName": "AWS Migration Hub Refactor Spaces",
+   "serviceId": "Migration Hub Refactor Spaces",
+   "category": "Migration & Modernization",
+   "icon": "icons/migration-hub-refactor-spaces.svg",
+   "protocol": "rest-json",
+   "operations": 24,
+   "listOps": [
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "migrationhub-config",
+   "fullName": "AWS Migration Hub Config",
+   "serviceId": "MigrationHub Config",
+   "category": "Migration & Modernization",
+   "icon": "icons/migrationhub-config.svg",
+   "protocol": "json",
+   "operations": 4,
+   "listOps": [
+    "DescribeHomeRegionControls"
+   ]
+  },
+  {
+   "id": "migrationhuborchestrator",
+   "fullName": "AWS Migration Hub Orchestrator",
+   "serviceId": "MigrationHubOrchestrator",
+   "category": "Migration & Modernization",
+   "icon": "icons/migrationhuborchestrator.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListPlugins",
+    "ListWorkflows"
+   ]
+  },
+  {
+   "id": "migrationhubstrategy",
+   "fullName": "Migration Hub Strategy Recommendations",
+   "serviceId": "MigrationHubStrategy",
+   "category": "Migration & Modernization",
+   "icon": "icons/migrationhubstrategy.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "ListAnalyzableServers",
+    "ListApplicationComponents",
+    "ListCollectors",
+    "ListImportFileTask",
+    "ListServers"
+   ]
+  },
+  {
+   "id": "mpa",
+   "fullName": "AWS Multi-party Approval",
+   "serviceId": "MPA",
+   "category": "Management Tools",
+   "icon": "icons/mpa.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "ListApprovalTeams",
+    "ListIdentitySources"
+   ]
+  },
+  {
+   "id": "mq",
+   "fullName": "AmazonMQ",
+   "serviceId": "mq",
+   "category": "Application Integration",
+   "icon": "icons/mq.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "DescribeBrokerInstanceOptions",
+    "ListBrokers"
+   ]
+  },
+  {
+   "id": "mturk",
+   "fullName": "Amazon Mechanical Turk",
+   "serviceId": "MTurk",
+   "category": "Artificial Intelligence",
+   "icon": "icons/mturk.svg",
+   "protocol": "json",
+   "operations": 39,
+   "listOps": [
+    "ListBonusPayments",
+    "ListHITs",
+    "ListQualificationRequests",
+    "ListReviewableHITs",
+    "ListWorkerBlocks"
+   ]
+  },
+  {
+   "id": "mwaa",
+   "fullName": "AmazonMWAA",
+   "serviceId": "MWAA",
+   "category": "Application Integration",
+   "icon": "icons/mwaa.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListEnvironments"
+   ]
+  },
+  {
+   "id": "mwaa-serverless",
+   "fullName": "AmazonMWAAServerless",
+   "serviceId": "MWAA Serverless",
+   "category": "Application Integration",
+   "icon": "icons/mwaa-serverless.svg",
+   "protocol": "json",
+   "operations": 15,
+   "listOps": [
+    "ListWorkflows"
+   ]
+  },
+  {
+   "id": "neptune",
+   "fullName": "Amazon Neptune",
+   "serviceId": "Neptune",
+   "category": "Databases",
+   "icon": "icons/neptune.svg",
+   "protocol": "query",
+   "operations": 70,
+   "listOps": [
+    "DescribeDBClusterParameterGroups",
+    "DescribeDBClusterSnapshots",
+    "DescribeDBClusters",
+    "DescribeDBInstances",
+    "DescribeDBParameterGroups",
+    "DescribeDBSubnetGroups"
+   ]
+  },
+  {
+   "id": "neptune-graph",
+   "fullName": "Amazon Neptune Graph",
+   "serviceId": "Neptune Graph",
+   "category": "Databases",
+   "icon": "icons/neptune-graph.svg",
+   "protocol": "rest-json",
+   "operations": 34,
+   "listOps": [
+    "ListExportTasks",
+    "ListGraphSnapshots",
+    "ListGraphs",
+    "ListImportTasks"
+   ]
+  },
+  {
+   "id": "neptunedata",
+   "fullName": "Amazon NeptuneData",
+   "serviceId": "neptunedata",
+   "category": "Databases",
+   "icon": "icons/neptunedata.svg",
+   "protocol": "rest-json",
+   "operations": 48,
+   "listOps": [
+    "ListGremlinQueries",
+    "ListIndexRebuilds",
+    "ListMLDataProcessingJobs",
+    "ListMLModelTrainingJobs",
+    "ListMLModelTransformJobs",
+    "ListOpenCypherQueries"
+   ]
+  },
+  {
+   "id": "network-firewall",
+   "fullName": "AWS Network Firewall",
+   "serviceId": "Network Firewall",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/network-firewall.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 90,
+   "listOps": [
+    "DescribeContainerAssociation",
+    "ListAnalysisReports",
+    "ListContainerAssociations",
+    "ListFirewallPoliciesV2",
+    "ListFirewalls",
+    "ListProxies"
+   ]
+  },
+  {
+   "id": "network-security-manager",
+   "fullName": "AWS Network Security Manager Customer API",
+   "serviceId": "Network Security Manager",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/network-security-manager.svg",
+   "protocol": "rest-json",
+   "operations": 46,
+   "listOps": [
+    "ListAdminAccounts",
+    "ListDeployments",
+    "ListRules",
+    "ListScopes"
+   ]
+  },
+  {
+   "id": "networkflowmonitor",
+   "fullName": "Network Flow Monitor",
+   "serviceId": "NetworkFlowMonitor",
+   "category": "Management Tools",
+   "icon": "icons/networkflowmonitor.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListMonitors",
+    "ListScopes"
+   ]
+  },
+  {
+   "id": "networkmanager",
+   "fullName": "AWS Network Manager",
+   "serviceId": "NetworkManager",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/networkmanager.svg",
+   "protocol": "rest-json",
+   "operations": 97,
+   "listOps": [
+    "DescribeGlobalNetworks",
+    "ListAttachments",
+    "ListConnectPeers",
+    "ListCoreNetworks",
+    "ListPeerings"
+   ]
+  },
+  {
+   "id": "networkmonitor",
+   "fullName": "Amazon CloudWatch Network Monitor",
+   "serviceId": "NetworkMonitor",
+   "category": "Management Tools",
+   "icon": "icons/networkmonitor.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListMonitors"
+   ]
+  },
+  {
+   "id": "notifications",
+   "fullName": "AWS User Notifications",
+   "serviceId": "Notifications",
+   "category": "Management Tools",
+   "icon": "icons/notifications.svg",
+   "protocol": "rest-json",
+   "operations": 40,
+   "listOps": [
+    "ListManagedNotificationEvents",
+    "ListNotificationEvents",
+    "ListNotificationHubs"
+   ]
+  },
+  {
+   "id": "notificationscontacts",
+   "fullName": "AWS User Notifications Contacts",
+   "serviceId": "NotificationsContacts",
+   "category": "Management Tools",
+   "icon": "icons/notificationscontacts.svg",
+   "protocol": "rest-json",
+   "operations": 9,
+   "listOps": [
+    "ListEmailContacts"
+   ]
+  },
+  {
+   "id": "nova-act",
+   "fullName": "Nova Act Service",
+   "serviceId": "Nova Act",
+   "category": "Artificial Intelligence",
+   "icon": "icons/nova-act.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListWorkflowDefinitions"
+   ]
+  },
+  {
+   "id": "oam",
+   "fullName": "CloudWatch Observability Access Manager",
+   "serviceId": "OAM",
+   "category": "Management Tools",
+   "icon": "icons/oam.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": [
+    "ListLinks",
+    "ListSinks"
+   ]
+  },
+  {
+   "id": "observabilityadmin",
+   "fullName": "CloudWatch Observability Admin Service",
+   "serviceId": "ObservabilityAdmin",
+   "category": "Management Tools",
+   "icon": "icons/observabilityadmin.svg",
+   "protocol": "rest-json",
+   "operations": 45,
+   "listOps": [
+    "ListCentralizationRulesForOrganization",
+    "ListDatasetIntegrations",
+    "ListResourceTelemetry",
+    "ListResourceTelemetryForOrganization",
+    "ListS3TableIntegrations",
+    "ListTelemetryPipelines"
+   ]
+  },
+  {
+   "id": "odb",
+   "fullName": "odb",
+   "serviceId": "odb",
+   "category": "Databases",
+   "icon": "icons/odb.svg",
+   "protocol": "json",
+   "operations": 81,
+   "listOps": [
+    "ListAutonomousDatabaseCharacterSets",
+    "ListAutonomousDatabases",
+    "ListCloudAutonomousVmClusters",
+    "ListCloudExadataInfrastructures",
+    "ListCloudVmClusters",
+    "ListDbNodes"
+   ]
+  },
+  {
+   "id": "omics",
+   "fullName": "Amazon Omics",
+   "serviceId": "Omics",
+   "category": "Artificial Intelligence",
+   "icon": "icons/omics.svg",
+   "protocol": "rest-json",
+   "operations": 107,
+   "listOps": [
+    "ListAnnotationImportJobs",
+    "ListAnnotationStores",
+    "ListBatch",
+    "ListReferenceStores",
+    "ListRunCaches",
+    "ListRunGroups"
+   ]
+  },
+  {
+   "id": "opensearch",
+   "fullName": "Amazon OpenSearch Service",
+   "serviceId": "OpenSearch",
+   "category": "Analytics",
+   "icon": "icons/opensearch.svg",
+   "protocol": "rest-json",
+   "operations": 103,
+   "listOps": [
+    "DescribeInboundConnections",
+    "DescribeOutboundConnections",
+    "DescribePackages",
+    "DescribeReservedInstances",
+    "ListApplications",
+    "ListDirectQueryDataSources"
+   ]
+  },
+  {
+   "id": "opensearchserverless",
+   "fullName": "OpenSearch Service Serverless",
+   "serviceId": "OpenSearchServerless",
+   "category": "Analytics",
+   "icon": "icons/opensearchserverless.svg",
+   "protocol": "json",
+   "operations": 54,
+   "listOps": [
+    "ListCollectionGroups",
+    "ListCollections"
+   ]
+  },
+  {
+   "id": "organizations",
+   "fullName": "AWS Organizations",
+   "serviceId": "Organizations",
+   "category": "Management Tools",
+   "icon": "icons/organizations.svg",
+   "protocol": "json",
+   "operations": 63,
+   "listOps": [
+    "ListAWSServiceAccessForOrganization",
+    "ListAccounts",
+    "ListDelegatedAdministrators",
+    "ListHandshakesForAccount",
+    "ListHandshakesForOrganization",
+    "ListRoots"
+   ]
+  },
+  {
+   "id": "osis",
+   "fullName": "Amazon OpenSearch Ingestion",
+   "serviceId": "OSIS",
+   "category": "Analytics",
+   "icon": "icons/osis.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "ListPipelineBlueprints",
+    "ListPipelineEndpointConnections",
+    "ListPipelines"
+   ]
+  },
+  {
+   "id": "outposts",
+   "fullName": "AWS Outposts",
+   "serviceId": "Outposts",
+   "category": "Compute",
+   "icon": "icons/outposts.svg",
+   "protocol": "rest-json",
+   "operations": 45,
+   "listOps": [
+    "ListCapacityTasks",
+    "ListCatalogItems",
+    "ListOrders",
+    "ListOutposts",
+    "ListQuotes",
+    "ListSites"
+   ]
+  },
+  {
+   "id": "partnercentral-account",
+   "fullName": "Partner Central Account API",
+   "serviceId": "PartnerCentral Account",
+   "category": "Management Tools",
+   "icon": "icons/partnercentral-account.svg",
+   "protocol": "json",
+   "operations": 34,
+   "listOps": []
+  },
+  {
+   "id": "partnercentral-benefits",
+   "fullName": "Partner Central Benefits API",
+   "serviceId": "PartnerCentral Benefits",
+   "category": "Management Tools",
+   "icon": "icons/partnercentral-benefits.svg",
+   "protocol": "json",
+   "operations": 17,
+   "listOps": []
+  },
+  {
+   "id": "partnercentral-channel",
+   "fullName": "Partner Central Channel API",
+   "serviceId": "PartnerCentral Channel",
+   "category": "Management Tools",
+   "icon": "icons/partnercentral-channel.svg",
+   "protocol": "json",
+   "operations": 17,
+   "listOps": []
+  },
+  {
+   "id": "partnercentral-revenue-measurement",
+   "fullName": "Partner Central Revenue Measurement API",
+   "serviceId": "PartnerCentral Revenue Measurement",
+   "category": "Management Tools",
+   "icon": "icons/partnercentral-revenue-measurement.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 18,
+   "listOps": []
+  },
+  {
+   "id": "partnercentral-selling",
+   "fullName": "Partner Central Selling API",
+   "serviceId": "PartnerCentral Selling",
+   "category": "Management Tools",
+   "icon": "icons/partnercentral-selling.svg",
+   "protocol": "json",
+   "operations": 45,
+   "listOps": []
+  },
+  {
+   "id": "payment-cryptography",
+   "fullName": "Payment Cryptography Control Plane",
+   "serviceId": "Payment Cryptography",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/payment-cryptography.svg",
+   "protocol": "json",
+   "operations": 32,
+   "listOps": [
+    "ListAliases",
+    "ListKeys"
+   ]
+  },
+  {
+   "id": "payment-cryptography-data",
+   "fullName": "Payment Cryptography Data Plane",
+   "serviceId": "Payment Cryptography Data",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/payment-cryptography-data.svg",
+   "protocol": "rest-json",
+   "operations": 15,
+   "listOps": []
+  },
+  {
+   "id": "pca-connector-ad",
+   "fullName": "PcaConnectorAd",
+   "serviceId": "Pca Connector Ad",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/pca-connector-ad.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListConnectors",
+    "ListDirectoryRegistrations"
+   ]
+  },
+  {
+   "id": "pca-connector-scep",
+   "fullName": "Private CA Connector for SCEP",
+   "serviceId": "Pca Connector Scep",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/pca-connector-scep.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListConnectors"
+   ]
+  },
+  {
+   "id": "pcs",
+   "fullName": "AWS Parallel Computing Service",
+   "serviceId": "PCS",
+   "category": "Compute",
+   "icon": "icons/pcs.svg",
+   "protocol": "json",
+   "operations": 19,
+   "listOps": [
+    "ListClusters"
+   ]
+  },
+  {
+   "id": "personalize",
+   "fullName": "Amazon Personalize",
+   "serviceId": "Personalize",
+   "category": "Artificial Intelligence",
+   "icon": "icons/personalize.svg",
+   "protocol": "json",
+   "operations": 71,
+   "listOps": [
+    "ListBatchInferenceJobs",
+    "ListBatchSegmentJobs",
+    "ListCampaigns",
+    "ListDataDeletionJobs",
+    "ListDatasetExportJobs",
+    "ListDatasetGroups"
+   ]
+  },
+  {
+   "id": "personalize-events",
+   "fullName": "Amazon Personalize Events",
+   "serviceId": "Personalize Events",
+   "category": "Artificial Intelligence",
+   "icon": "icons/personalize-events.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "personalize-runtime",
+   "fullName": "Amazon Personalize Runtime",
+   "serviceId": "Personalize Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/personalize-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "pi",
+   "fullName": "AWS Performance Insights",
+   "serviceId": "PI",
+   "category": "Databases",
+   "icon": "icons/pi.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 14,
+   "listOps": []
+  },
+  {
+   "id": "pinpoint",
+   "fullName": "Amazon Pinpoint",
+   "serviceId": "Pinpoint",
+   "category": "Business Applications",
+   "icon": "icons/pinpoint.svg",
+   "protocol": "rest-json",
+   "operations": 122,
+   "listOps": []
+  },
+  {
+   "id": "pinpoint-email",
+   "fullName": "Amazon Pinpoint Email Service",
+   "serviceId": "Pinpoint Email",
+   "category": "Business Applications",
+   "icon": "icons/pinpoint-email.svg",
+   "protocol": "rest-json",
+   "operations": 42,
+   "listOps": [
+    "ListConfigurationSets",
+    "ListDedicatedIpPools",
+    "ListDeliverabilityTestReports",
+    "ListEmailIdentities"
+   ]
+  },
+  {
+   "id": "pinpoint-sms-voice",
+   "fullName": "Amazon Pinpoint SMS and Voice Service",
+   "serviceId": "Pinpoint SMS Voice",
+   "category": "Business Applications",
+   "icon": "icons/pinpoint-sms-voice.svg",
+   "protocol": "rest-json",
+   "operations": 8,
+   "listOps": [
+    "ListConfigurationSets"
+   ]
+  },
+  {
+   "id": "pinpoint-sms-voice-v2",
+   "fullName": "Amazon Pinpoint SMS Voice V2",
+   "serviceId": "Pinpoint SMS Voice V2",
+   "category": "Business Applications",
+   "icon": "icons/pinpoint-sms-voice-v2.svg",
+   "protocol": "json",
+   "operations": 110,
+   "listOps": [
+    "DescribeConfigurationSets",
+    "DescribeOptOutLists",
+    "DescribePhoneNumbers",
+    "DescribePools",
+    "DescribeRcsAgents",
+    "DescribeRegistrationAttachments"
+   ]
+  },
+  {
+   "id": "pipes",
+   "fullName": "Amazon EventBridge Pipes",
+   "serviceId": "Pipes",
+   "category": "Application Integration",
+   "icon": "icons/pipes.svg",
+   "protocol": "rest-json",
+   "operations": 10,
+   "listOps": [
+    "ListPipes"
+   ]
+  },
+  {
+   "id": "polly",
+   "fullName": "Amazon Polly",
+   "serviceId": "Polly",
+   "category": "Artificial Intelligence",
+   "icon": "icons/polly.svg",
+   "protocol": "rest-json",
+   "operations": 13,
+   "listOps": [
+    "DescribeVoices",
+    "ListLexicons",
+    "ListSpeechSynthesisTasks"
+   ]
+  },
+  {
+   "id": "pricing",
+   "fullName": "AWS Price List Service",
+   "serviceId": "Pricing",
+   "category": "Cloud Financial Management",
+   "icon": "icons/pricing.svg",
+   "protocol": "json",
+   "operations": 5,
+   "listOps": [
+    "DescribeServices"
+   ]
+  },
+  {
+   "id": "pricing-plan-manager",
+   "fullName": "PricingPlanManager",
+   "serviceId": "Pricing Plan Manager",
+   "category": "Cloud Financial Management",
+   "icon": "icons/pricing-plan-manager.svg",
+   "protocol": "rest-json",
+   "operations": 9,
+   "listOps": [
+    "ListSubscriptions"
+   ]
+  },
+  {
+   "id": "proton",
+   "fullName": "AWS Proton",
+   "serviceId": "Proton",
+   "category": "Management Tools",
+   "icon": "icons/proton.svg",
+   "protocol": "json",
+   "operations": 87,
+   "listOps": [
+    "ListComponents",
+    "ListDeployments",
+    "ListEnvironments",
+    "ListRepositories",
+    "ListServiceInstances",
+    "ListServices"
+   ]
+  },
+  {
+   "id": "qapps",
+   "fullName": "QApps",
+   "serviceId": "QApps",
+   "category": "Artificial Intelligence",
+   "icon": "icons/qapps.svg",
+   "protocol": "rest-json",
+   "operations": 35,
+   "listOps": []
+  },
+  {
+   "id": "qbusiness",
+   "fullName": "QBusiness",
+   "serviceId": "QBusiness",
+   "category": "Artificial Intelligence",
+   "icon": "icons/qbusiness.svg",
+   "protocol": "rest-json",
+   "operations": 83,
+   "listOps": [
+    "ListApplications"
+   ]
+  },
+  {
+   "id": "qconnect",
+   "fullName": "Amazon Q Connect",
+   "serviceId": "QConnect",
+   "category": "Artificial Intelligence",
+   "icon": "icons/qconnect.svg",
+   "protocol": "rest-json",
+   "operations": 96,
+   "listOps": [
+    "ListAssistants",
+    "ListKnowledgeBases"
+   ]
+  },
+  {
+   "id": "quicksight",
+   "fullName": "Amazon QuickSight",
+   "serviceId": "QuickSight",
+   "category": "Business Applications",
+   "icon": "icons/quicksight.svg",
+   "protocol": "rest-json",
+   "operations": 301,
+   "listOps": []
+  },
+  {
+   "id": "ram",
+   "fullName": "AWS Resource Access Manager",
+   "serviceId": "RAM",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/ram.svg",
+   "protocol": "rest-json",
+   "operations": 36,
+   "listOps": [
+    "ListPermissionAssociations",
+    "ListPermissions",
+    "ListReplacePermissionAssociationsWork",
+    "ListSourceAssociations"
+   ]
+  },
+  {
+   "id": "rbin",
+   "fullName": "Amazon Recycle Bin",
+   "serviceId": "rbin",
+   "category": "Storage",
+   "icon": "icons/rbin.svg",
+   "protocol": "rest-json",
+   "operations": 10,
+   "listOps": []
+  },
+  {
+   "id": "rds",
+   "fullName": "Amazon Relational Database Service",
+   "serviceId": "RDS",
+   "category": "Databases",
+   "icon": "icons/rds.svg",
+   "protocol": "query",
+   "operations": 168,
+   "listOps": [
+    "DescribeDBInstances",
+    "DescribeDBClusters"
+   ]
+  },
+  {
+   "id": "rds-data",
+   "fullName": "AWS RDS DataService",
+   "serviceId": "RDS Data",
+   "category": "Databases",
+   "icon": "icons/rds-data.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "redshift",
+   "fullName": "Amazon Redshift",
+   "serviceId": "Redshift",
+   "category": "Analytics",
+   "icon": "icons/redshift.svg",
+   "protocol": "query",
+   "operations": 145,
+   "listOps": [
+    "DescribeAuthenticationProfiles",
+    "DescribeClusterDbRevisions",
+    "DescribeClusterParameterGroups",
+    "DescribeClusterSecurityGroups",
+    "DescribeClusterSnapshots",
+    "DescribeClusterSubnetGroups"
+   ]
+  },
+  {
+   "id": "redshift-data",
+   "fullName": "Redshift Data API Service",
+   "serviceId": "Redshift Data",
+   "category": "Analytics",
+   "icon": "icons/redshift-data.svg",
+   "protocol": "json",
+   "operations": 12,
+   "listOps": [
+    "ListDatabases",
+    "ListSessions",
+    "ListStatements"
+   ]
+  },
+  {
+   "id": "redshift-serverless",
+   "fullName": "Redshift Serverless",
+   "serviceId": "Redshift Serverless",
+   "category": "Analytics",
+   "icon": "icons/redshift-serverless.svg",
+   "protocol": "json",
+   "operations": 65,
+   "listOps": [
+    "ListCustomDomainAssociations",
+    "ListEndpointAccess",
+    "ListManagedWorkgroups",
+    "ListNamespaces",
+    "ListRecoveryPoints",
+    "ListReservations"
+   ]
+  },
+  {
+   "id": "rekognition",
+   "fullName": "Amazon Rekognition",
+   "serviceId": "Rekognition",
+   "category": "Artificial Intelligence",
+   "icon": "icons/rekognition.svg",
+   "protocol": "json",
+   "operations": 75,
+   "listOps": [
+    "DescribeProjects",
+    "ListCollections",
+    "ListMediaAnalysisJobs",
+    "ListStreamProcessors"
+   ]
+  },
+  {
+   "id": "repostspace",
+   "fullName": "AWS re:Post Private",
+   "serviceId": "repostspace",
+   "category": "Customer Enablement",
+   "icon": "icons/repostspace.svg",
+   "protocol": "rest-json",
+   "operations": 19,
+   "listOps": [
+    "ListSpaces"
+   ]
+  },
+  {
+   "id": "resiliencehub",
+   "fullName": "AWS Resilience Hub",
+   "serviceId": "resiliencehub",
+   "category": "Management Tools",
+   "icon": "icons/resiliencehub.svg",
+   "protocol": "rest-json",
+   "operations": 63,
+   "listOps": [
+    "ListAppAssessments",
+    "ListApps",
+    "ListMetrics"
+   ]
+  },
+  {
+   "id": "resiliencehubv2",
+   "fullName": "AWS Resilience Hub V2",
+   "serviceId": "resiliencehubv2",
+   "category": "Management Tools",
+   "icon": "icons/resiliencehubv2.svg",
+   "protocol": "rest-json",
+   "operations": 73,
+   "listOps": [
+    "ListDependencies",
+    "ListReports",
+    "ListServices",
+    "ListSystems"
+   ]
+  },
+  {
+   "id": "resource-explorer-2",
+   "fullName": "AWS Resource Explorer",
+   "serviceId": "Resource Explorer 2",
+   "category": "Management Tools",
+   "icon": "icons/resource-explorer-2.svg",
+   "protocol": "rest-json",
+   "operations": 32,
+   "listOps": [
+    "ListIndexes",
+    "ListManagedViews",
+    "ListResources",
+    "ListServiceIndexes",
+    "ListServiceViews",
+    "ListStreamingAccessForServices"
+   ]
+  },
+  {
+   "id": "resource-groups",
+   "fullName": "AWS Resource Groups",
+   "serviceId": "Resource Groups",
+   "category": "Management Tools",
+   "icon": "icons/resource-groups.svg",
+   "protocol": "rest-json",
+   "operations": 23,
+   "listOps": [
+    "ListGroupResources",
+    "ListGroups",
+    "ListTagSyncTasks"
+   ]
+  },
+  {
+   "id": "resourcegroupstaggingapi",
+   "fullName": "AWS Resource Groups Tagging API",
+   "serviceId": "Resource Groups Tagging API",
+   "category": "Management Tools",
+   "icon": "icons/resourcegroupstaggingapi.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 9,
+   "listOps": []
+  },
+  {
+   "id": "rolesanywhere",
+   "fullName": "IAM Roles Anywhere",
+   "serviceId": "RolesAnywhere",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/rolesanywhere.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListCrls",
+    "ListProfiles",
+    "ListSubjects",
+    "ListTrustAnchors"
+   ]
+  },
+  {
+   "id": "route53",
+   "fullName": "Amazon Route 53",
+   "serviceId": "Route 53",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53.svg",
+   "protocol": "rest-xml",
+   "operations": 71,
+   "listOps": [
+    "ListHostedZones"
+   ]
+  },
+  {
+   "id": "route53-recovery-cluster",
+   "fullName": "Route53 Recovery Cluster",
+   "serviceId": "Route53 Recovery Cluster",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53-recovery-cluster.svg",
+   "protocol": "json",
+   "operations": 4,
+   "listOps": [
+    "ListRoutingControls"
+   ]
+  },
+  {
+   "id": "route53-recovery-control-config",
+   "fullName": "AWS Route53 Recovery Control Config",
+   "serviceId": "Route53 Recovery Control Config",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53-recovery-control-config.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListClusters",
+    "ListControlPanels"
+   ]
+  },
+  {
+   "id": "route53-recovery-readiness",
+   "fullName": "AWS Route53 Recovery Readiness",
+   "serviceId": "Route53 Recovery Readiness",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53-recovery-readiness.svg",
+   "protocol": "rest-json",
+   "operations": 32,
+   "listOps": [
+    "ListCells",
+    "ListCrossAccountAuthorizations",
+    "ListReadinessChecks",
+    "ListRecoveryGroups",
+    "ListResourceSets",
+    "ListRules"
+   ]
+  },
+  {
+   "id": "route53domains",
+   "fullName": "Amazon Route 53 Domains",
+   "serviceId": "Route 53 Domains",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53domains.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 36,
+   "listOps": [
+    "ListDomains",
+    "ListOperations",
+    "ListPrices"
+   ]
+  },
+  {
+   "id": "route53globalresolver",
+   "fullName": "Amazon Route 53 Global Resolver",
+   "serviceId": "Route53GlobalResolver",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53globalresolver.svg",
+   "protocol": "rest-json",
+   "operations": 48,
+   "listOps": [
+    "ListAccessSources",
+    "ListFirewallDomainLists",
+    "ListGlobalResolvers",
+    "ListHostedZoneAssociations",
+    "ListSharedDNSViews"
+   ]
+  },
+  {
+   "id": "route53profiles",
+   "fullName": "Route 53 Profiles",
+   "serviceId": "Route53Profiles",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53profiles.svg",
+   "protocol": "rest-json",
+   "operations": 17,
+   "listOps": [
+    "ListProfileAssociations",
+    "ListProfiles"
+   ]
+  },
+  {
+   "id": "route53resolver",
+   "fullName": "Amazon Route 53 Resolver",
+   "serviceId": "Route53Resolver",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/route53resolver.svg",
+   "protocol": "json",
+   "operations": 72,
+   "listOps": [
+    "ListFirewallConfigs",
+    "ListFirewallDomainLists",
+    "ListFirewallRuleGroupAssociations",
+    "ListFirewallRuleGroups",
+    "ListOutpostResolvers",
+    "ListResolverConfigs"
+   ]
+  },
+  {
+   "id": "rtbfabric",
+   "fullName": "RTBFabric",
+   "serviceId": "RTBFabric",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/rtbfabric.svg",
+   "protocol": "rest-json",
+   "operations": 36,
+   "listOps": [
+    "ListRequesterGateways",
+    "ListResponderGateways"
+   ]
+  },
+  {
+   "id": "rum",
+   "fullName": "CloudWatch RUM",
+   "serviceId": "RUM",
+   "category": "Management Tools",
+   "icon": "icons/rum.svg",
+   "protocol": "rest-json",
+   "operations": 20,
+   "listOps": [
+    "ListAppMonitors"
+   ]
+  },
+  {
+   "id": "s3",
+   "fullName": "Amazon Simple Storage Service",
+   "serviceId": "S3",
+   "category": "Storage",
+   "icon": "icons/s3.svg",
+   "protocol": "rest-xml",
+   "operations": 116,
+   "listOps": [
+    "ListBuckets"
+   ]
+  },
+  {
+   "id": "s3control",
+   "fullName": "AWS S3 Control",
+   "serviceId": "S3 Control",
+   "category": "Storage",
+   "icon": "icons/s3control.svg",
+   "protocol": "rest-xml",
+   "operations": 97,
+   "listOps": []
+  },
+  {
+   "id": "s3files",
+   "fullName": "Amazon S3 Files",
+   "serviceId": "S3Files",
+   "category": "Storage",
+   "icon": "icons/s3files.svg",
+   "protocol": "rest-json",
+   "operations": 21,
+   "listOps": [
+    "ListFileSystems",
+    "ListMountTargets"
+   ]
+  },
+  {
+   "id": "s3outposts",
+   "fullName": "Amazon S3 on Outposts",
+   "serviceId": "S3Outposts",
+   "category": "Storage",
+   "icon": "icons/s3outposts.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": [
+    "ListOutpostsWithS3"
+   ]
+  },
+  {
+   "id": "s3tables",
+   "fullName": "Amazon S3 Tables",
+   "serviceId": "S3Tables",
+   "category": "Storage",
+   "icon": "icons/s3tables.svg",
+   "protocol": "rest-json",
+   "operations": 57,
+   "listOps": [
+    "ListTableBuckets",
+    "ListTableMigrations"
+   ]
+  },
+  {
+   "id": "s3vectors",
+   "fullName": "Amazon S3 Vectors",
+   "serviceId": "S3Vectors",
+   "category": "Storage",
+   "icon": "icons/s3vectors.svg",
+   "protocol": "rest-json",
+   "operations": 21,
+   "listOps": [
+    "ListIndexes",
+    "ListVectorBuckets",
+    "ListVectors"
+   ]
+  },
+  {
+   "id": "sagemaker",
+   "fullName": "Amazon SageMaker Service",
+   "serviceId": "SageMaker",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker.svg",
+   "protocol": "json",
+   "operations": 414,
+   "listOps": [
+    "ListAIBenchmarkJobs",
+    "ListAIRecommendationJobs",
+    "ListAIWorkloadConfigs",
+    "ListActions",
+    "ListAlgorithms",
+    "ListAppImageConfigs"
+   ]
+  },
+  {
+   "id": "sagemaker-a2i-runtime",
+   "fullName": "Amazon Augmented AI Runtime",
+   "serviceId": "SageMaker A2I Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-a2i-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 5,
+   "listOps": []
+  },
+  {
+   "id": "sagemaker-edge",
+   "fullName": "Amazon Sagemaker Edge Manager",
+   "serviceId": "Sagemaker Edge",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-edge.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "sagemaker-featurestore-runtime",
+   "fullName": "Amazon SageMaker Feature Store Runtime",
+   "serviceId": "SageMaker FeatureStore Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-featurestore-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 7,
+   "listOps": []
+  },
+  {
+   "id": "sagemaker-geospatial",
+   "fullName": "Amazon SageMaker geospatial capabilities",
+   "serviceId": "SageMaker Geospatial",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-geospatial.svg",
+   "protocol": "rest-json",
+   "operations": 19,
+   "listOps": [
+    "ListEarthObservationJobs",
+    "ListRasterDataCollections",
+    "ListVectorEnrichmentJobs"
+   ]
+  },
+  {
+   "id": "sagemaker-metrics",
+   "fullName": "Amazon SageMaker Metrics Service",
+   "serviceId": "SageMaker Metrics",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-metrics.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "sagemaker-runtime",
+   "fullName": "Amazon SageMaker Runtime",
+   "serviceId": "SageMaker Runtime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemaker-runtime.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "sagemakerjobruntime",
+   "fullName": "Sagemaker Job Runtime Service",
+   "serviceId": "SagemakerJobRuntime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemakerjobruntime.svg",
+   "protocol": "rest-json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "sagemakertrainingsessionruntime",
+   "fullName": "SageMaker Training Session Runtime",
+   "serviceId": "SageMakerTrainingSessionRuntime",
+   "category": "Artificial Intelligence",
+   "icon": "icons/sagemakertrainingsessionruntime.svg",
+   "protocol": "rest-json",
+   "operations": 6,
+   "listOps": []
+  },
+  {
+   "id": "savingsplans",
+   "fullName": "AWS Savings Plans",
+   "serviceId": "savingsplans",
+   "category": "Cloud Financial Management",
+   "icon": "icons/savingsplans.svg",
+   "protocol": "rest-json",
+   "operations": 10,
+   "listOps": [
+    "DescribeSavingsPlans",
+    "DescribeSavingsPlansOfferingRates"
+   ]
+  },
+  {
+   "id": "scheduler",
+   "fullName": "Amazon EventBridge Scheduler",
+   "serviceId": "Scheduler",
+   "category": "Application Integration",
+   "icon": "icons/scheduler.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListScheduleGroups",
+    "ListSchedules"
+   ]
+  },
+  {
+   "id": "schemas",
+   "fullName": "Schemas",
+   "serviceId": "schemas",
+   "category": "Application Integration",
+   "icon": "icons/schemas.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListDiscoverers",
+    "ListRegistries"
+   ]
+  },
+  {
+   "id": "sdb",
+   "fullName": "Amazon SimpleDB",
+   "serviceId": "SimpleDB",
+   "category": "Databases",
+   "icon": "icons/sdb.svg",
+   "protocol": "query",
+   "operations": 10,
+   "listOps": [
+    "ListDomains"
+   ]
+  },
+  {
+   "id": "secretsmanager",
+   "fullName": "AWS Secrets Manager",
+   "serviceId": "Secrets Manager",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/secretsmanager.svg",
+   "protocol": "json",
+   "operations": 23,
+   "listOps": [
+    "ListSecrets"
+   ]
+  },
+  {
+   "id": "security-ir",
+   "fullName": "Security Incident Response",
+   "serviceId": "Security IR",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/security-ir.svg",
+   "protocol": "rest-json",
+   "operations": 25,
+   "listOps": [
+    "ListCases",
+    "ListMemberships"
+   ]
+  },
+  {
+   "id": "securityagent",
+   "fullName": "AWS Security Agent",
+   "serviceId": "SecurityAgent",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/securityagent.svg",
+   "protocol": "rest-json",
+   "operations": 96,
+   "listOps": [
+    "ListAgentSpaces",
+    "ListApplications",
+    "ListIntegrations",
+    "ListPrivateConnections",
+    "ListSecurityRequirementPacks",
+    "ListTargetDomains"
+   ]
+  },
+  {
+   "id": "securityhub",
+   "fullName": "AWS SecurityHub",
+   "serviceId": "SecurityHub",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/securityhub.svg",
+   "protocol": "rest-json",
+   "operations": 126,
+   "listOps": [
+    "DescribeActionTargets",
+    "DescribeProducts",
+    "DescribeProductsV2",
+    "DescribeStandards",
+    "ListAggregatorsV2",
+    "ListAutomationRules"
+   ]
+  },
+  {
+   "id": "securitylake",
+   "fullName": "Amazon Security Lake",
+   "serviceId": "SecurityLake",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/securitylake.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListDataLakeExceptions",
+    "ListDataLakes",
+    "ListLogSources",
+    "ListSubscribers"
+   ]
+  },
+  {
+   "id": "serverlessrepo",
+   "fullName": "AWSServerlessApplicationRepository",
+   "serviceId": "ServerlessApplicationRepository",
+   "category": "Compute",
+   "icon": "icons/serverlessrepo.svg",
+   "protocol": "rest-json",
+   "operations": 14,
+   "listOps": [
+    "ListApplications"
+   ]
+  },
+  {
+   "id": "service-quotas",
+   "fullName": "Service Quotas",
+   "serviceId": "Service Quotas",
+   "category": "Management Tools",
+   "icon": "icons/service-quotas.svg",
+   "protocol": "json",
+   "operations": 26,
+   "listOps": [
+    "ListRequestedServiceQuotaChangeHistory",
+    "ListServiceQuotaIncreaseRequestsInTemplate",
+    "ListServices"
+   ]
+  },
+  {
+   "id": "servicecatalog",
+   "fullName": "AWS Service Catalog",
+   "serviceId": "Service Catalog",
+   "category": "Management Tools",
+   "icon": "icons/servicecatalog.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 90,
+   "listOps": [
+    "DescribeProduct",
+    "DescribeProductAsAdmin",
+    "DescribeProvisionedProduct",
+    "DescribeProvisioningArtifact",
+    "DescribeProvisioningParameters",
+    "ListAcceptedPortfolioShares"
+   ]
+  },
+  {
+   "id": "servicecatalog-appregistry",
+   "fullName": "AWS Service Catalog App Registry",
+   "serviceId": "Service Catalog AppRegistry",
+   "category": "Management Tools",
+   "icon": "icons/servicecatalog-appregistry.svg",
+   "protocol": "rest-json",
+   "operations": 24,
+   "listOps": [
+    "ListApplications",
+    "ListAttributeGroups"
+   ]
+  },
+  {
+   "id": "servicediscovery",
+   "fullName": "AWS Cloud Map",
+   "serviceId": "ServiceDiscovery",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/servicediscovery.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 30,
+   "listOps": [
+    "ListNamespaces",
+    "ListOperations",
+    "ListServices"
+   ]
+  },
+  {
+   "id": "ses",
+   "fullName": "Amazon Simple Email Service",
+   "serviceId": "SES",
+   "category": "Business Applications",
+   "icon": "icons/ses.svg",
+   "protocol": "query",
+   "operations": 71,
+   "listOps": [
+    "DescribeActiveReceiptRuleSet",
+    "ListConfigurationSets",
+    "ListIdentities",
+    "ListReceiptFilters",
+    "ListReceiptRuleSets",
+    "ListVerifiedEmailAddresses"
+   ]
+  },
+  {
+   "id": "sesv2",
+   "fullName": "Amazon Simple Email Service",
+   "serviceId": "SESv2",
+   "category": "Business Applications",
+   "icon": "icons/sesv2.svg",
+   "protocol": "rest-json",
+   "operations": 116,
+   "listOps": [
+    "ListConfigurationSets",
+    "ListContactLists",
+    "ListDedicatedIpPools",
+    "ListDeliverabilityTestReports",
+    "ListEmailIdentities",
+    "ListExportJobs"
+   ]
+  },
+  {
+   "id": "shield",
+   "fullName": "AWS Shield",
+   "serviceId": "Shield",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/shield.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 36,
+   "listOps": [
+    "DescribeAttackStatistics",
+    "DescribeDRTAccess",
+    "ListAttacks",
+    "ListProtectionGroups",
+    "ListProtections"
+   ]
+  },
+  {
+   "id": "signer",
+   "fullName": "AWS Signer",
+   "serviceId": "signer",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/signer.svg",
+   "protocol": "rest-json",
+   "operations": 19,
+   "listOps": [
+    "ListSigningJobs",
+    "ListSigningPlatforms",
+    "ListSigningProfiles"
+   ]
+  },
+  {
+   "id": "signer-data",
+   "fullName": "AWS Signer Data Plane",
+   "serviceId": "Signer Data",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/signer-data.svg",
+   "protocol": "rest-json",
+   "operations": 1,
+   "listOps": []
+  },
+  {
+   "id": "signin",
+   "fullName": "AWS Sign-In Service",
+   "serviceId": "Signin",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/signin.svg",
+   "protocol": "rest-json",
+   "operations": 13,
+   "listOps": [
+    "ListResourcePermissionStatements"
+   ]
+  },
+  {
+   "id": "simpledbv2",
+   "fullName": "Amazon SimpleDB v2",
+   "serviceId": "SimpleDBv2",
+   "category": "Databases",
+   "icon": "icons/simpledbv2.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": [
+    "ListExports"
+   ]
+  },
+  {
+   "id": "sms-voice",
+   "fullName": "Amazon Pinpoint SMS and Voice Service",
+   "serviceId": "Pinpoint SMS Voice",
+   "category": "Business Applications",
+   "icon": "icons/sms-voice.svg",
+   "protocol": "rest-json",
+   "operations": 8,
+   "listOps": [
+    "ListConfigurationSets"
+   ]
+  },
+  {
+   "id": "snow-device-management",
+   "fullName": "AWS Snow Device Management",
+   "serviceId": "Snow Device Management",
+   "category": "Storage",
+   "icon": "icons/snow-device-management.svg",
+   "protocol": "rest-json",
+   "operations": 13,
+   "listOps": [
+    "ListDevices",
+    "ListTasks"
+   ]
+  },
+  {
+   "id": "snowball",
+   "fullName": "Amazon Import/Export Snowball",
+   "serviceId": "Snowball",
+   "category": "Storage",
+   "icon": "icons/snowball.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 27,
+   "listOps": [
+    "DescribeAddresses",
+    "ListClusters",
+    "ListCompatibleImages",
+    "ListJobs",
+    "ListLongTermPricing",
+    "ListPickupLocations"
+   ]
+  },
+  {
+   "id": "sns",
+   "fullName": "Amazon Simple Notification Service",
+   "serviceId": "SNS",
+   "category": "Application Integration",
+   "icon": "icons/sns.svg",
+   "protocol": "query",
+   "operations": 42,
+   "listOps": [
+    "ListTopics",
+    "ListSubscriptions"
+   ]
+  },
+  {
+   "id": "socialmessaging",
+   "fullName": "AWS End User Messaging Social",
+   "serviceId": "SocialMessaging",
+   "category": "Business Applications",
+   "icon": "icons/socialmessaging.svg",
+   "protocol": "rest-json",
+   "operations": 38,
+   "listOps": [
+    "ListLinkedWhatsAppBusinessAccounts"
+   ]
+  },
+  {
+   "id": "sqs",
+   "fullName": "Amazon Simple Queue Service",
+   "serviceId": "SQS",
+   "category": "Application Integration",
+   "icon": "icons/sqs.svg",
+   "protocol": "json",
+   "operations": 23,
+   "listOps": [
+    "ListQueues"
+   ]
+  },
+  {
+   "id": "ssm",
+   "fullName": "Amazon Simple Systems Manager (SSM)",
+   "serviceId": "SSM",
+   "category": "Management Tools",
+   "icon": "icons/ssm.svg",
+   "protocol": "json",
+   "operations": 154,
+   "listOps": [
+    "DescribeParameters"
+   ]
+  },
+  {
+   "id": "ssm-contacts",
+   "fullName": "AWS Systems Manager Incident Manager Contacts",
+   "serviceId": "SSM Contacts",
+   "category": "Management Tools",
+   "icon": "icons/ssm-contacts.svg",
+   "protocol": "json",
+   "operations": 39,
+   "listOps": [
+    "ListContacts",
+    "ListEngagements",
+    "ListRotations"
+   ]
+  },
+  {
+   "id": "ssm-guiconnect",
+   "fullName": "AWS SSM-GUIConnect",
+   "serviceId": "SSM GuiConnect",
+   "category": "Management Tools",
+   "icon": "icons/ssm-guiconnect.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": []
+  },
+  {
+   "id": "ssm-incidents",
+   "fullName": "AWS Systems Manager Incident Manager",
+   "serviceId": "SSM Incidents",
+   "category": "Management Tools",
+   "icon": "icons/ssm-incidents.svg",
+   "protocol": "rest-json",
+   "operations": 31,
+   "listOps": [
+    "ListIncidentRecords",
+    "ListReplicationSets",
+    "ListResponsePlans"
+   ]
+  },
+  {
+   "id": "ssm-quicksetup",
+   "fullName": "AWS Systems Manager QuickSetup",
+   "serviceId": "SSM QuickSetup",
+   "category": "Management Tools",
+   "icon": "icons/ssm-quicksetup.svg",
+   "protocol": "rest-json",
+   "operations": 14,
+   "listOps": [
+    "ListConfigurationManagers"
+   ]
+  },
+  {
+   "id": "ssm-sap",
+   "fullName": "AWS Systems Manager for SAP",
+   "serviceId": "Ssm Sap",
+   "category": "Management Tools",
+   "icon": "icons/ssm-sap.svg",
+   "protocol": "rest-json",
+   "operations": 27,
+   "listOps": [
+    "ListApplications",
+    "ListComponents",
+    "ListConfigurationCheckDefinitions",
+    "ListDatabases"
+   ]
+  },
+  {
+   "id": "sso",
+   "fullName": "AWS Single Sign-On",
+   "serviceId": "SSO",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/sso.svg",
+   "protocol": "rest-json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "sso-admin",
+   "fullName": "AWS Single Sign-On Admin",
+   "serviceId": "SSO Admin",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/sso-admin.svg",
+   "protocol": "json",
+   "operations": 79,
+   "listOps": [
+    "ListApplicationProviders",
+    "ListInstances"
+   ]
+  },
+  {
+   "id": "sso-oidc",
+   "fullName": "AWS SSO OIDC",
+   "serviceId": "SSO OIDC",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/sso-oidc.svg",
+   "protocol": "rest-json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "stepfunctions",
+   "fullName": "AWS Step Functions",
+   "serviceId": "SFN",
+   "category": "Application Integration",
+   "icon": "icons/stepfunctions.svg",
+   "protocol": "json",
+   "operations": 37,
+   "listOps": [
+    "ListStateMachines",
+    "ListActivities"
+   ]
+  },
+  {
+   "id": "storagegateway",
+   "fullName": "AWS Storage Gateway",
+   "serviceId": "Storage Gateway",
+   "category": "Storage",
+   "icon": "icons/storagegateway.svg",
+   "protocol": "json",
+   "operations": 96,
+   "listOps": [
+    "DescribeTapeArchives",
+    "ListCacheReports",
+    "ListFileShares",
+    "ListFileSystemAssociations",
+    "ListGateways",
+    "ListTapePools"
+   ]
+  },
+  {
+   "id": "sts",
+   "fullName": "AWS Security Token Service",
+   "serviceId": "STS",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/sts.svg",
+   "protocol": "query",
+   "operations": 11,
+   "listOps": []
+  },
+  {
+   "id": "supplychain",
+   "fullName": "AWS Supply Chain",
+   "serviceId": "SupplyChain",
+   "category": "Business Applications",
+   "icon": "icons/supplychain.svg",
+   "protocol": "rest-json",
+   "operations": 30,
+   "listOps": [
+    "ListInstances"
+   ]
+  },
+  {
+   "id": "support",
+   "fullName": "AWS Support",
+   "serviceId": "Support",
+   "category": "Customer Enablement",
+   "icon": "icons/support.svg",
+   "protocol": "json",
+   "operations": 20,
+   "listOps": [
+    "DescribeCases",
+    "DescribeServices",
+    "DescribeSeverityLevels"
+   ]
+  },
+  {
+   "id": "support-app",
+   "fullName": "AWS Support App",
+   "serviceId": "Support App",
+   "category": "Customer Enablement",
+   "icon": "icons/support-app.svg",
+   "protocol": "rest-json",
+   "operations": 10,
+   "listOps": []
+  },
+  {
+   "id": "supportauthz",
+   "fullName": "SupportAuthZ",
+   "serviceId": "SupportAuthZ",
+   "category": "Customer Enablement",
+   "icon": "icons/supportauthz.svg",
+   "protocol": "rest-json",
+   "operations": 11,
+   "listOps": [
+    "ListSupportPermitRequests",
+    "ListSupportPermits"
+   ]
+  },
+  {
+   "id": "sustainability",
+   "fullName": "AWS Sustainability",
+   "serviceId": "Sustainability",
+   "category": "Management Tools",
+   "icon": "icons/sustainability.svg",
+   "protocol": "rest-json",
+   "operations": 4,
+   "listOps": []
+  },
+  {
+   "id": "swf",
+   "fullName": "Amazon Simple Workflow Service",
+   "serviceId": "SWF",
+   "category": "Application Integration",
+   "icon": "icons/swf.svg",
+   "protocol": "json",
+   "operations": 39,
+   "listOps": []
+  },
+  {
+   "id": "synthetics",
+   "fullName": "Synthetics",
+   "serviceId": "synthetics",
+   "category": "Management Tools",
+   "icon": "icons/synthetics.svg",
+   "protocol": "rest-json",
+   "operations": 22,
+   "listOps": [
+    "DescribeCanaries",
+    "DescribeCanariesLastRun",
+    "ListGroups"
+   ]
+  },
+  {
+   "id": "taxsettings",
+   "fullName": "Tax Settings",
+   "serviceId": "TaxSettings",
+   "category": "Cloud Financial Management",
+   "icon": "icons/taxsettings.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListSupplementalTaxRegistrations",
+    "ListTaxRegistrations"
+   ]
+  },
+  {
+   "id": "textract",
+   "fullName": "Amazon Textract",
+   "serviceId": "Textract",
+   "category": "Artificial Intelligence",
+   "icon": "icons/textract.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 25,
+   "listOps": [
+    "ListAdapters"
+   ]
+  },
+  {
+   "id": "timestream-influxdb",
+   "fullName": "Timestream InfluxDB",
+   "serviceId": "Timestream InfluxDB",
+   "category": "Databases",
+   "icon": "icons/timestream-influxdb.svg",
+   "protocol": "json",
+   "operations": 24,
+   "listOps": [
+    "ListDbBackups",
+    "ListDbClusters",
+    "ListDbInstances",
+    "ListDbParameterGroups"
+   ]
+  },
+  {
+   "id": "timestream-query",
+   "fullName": "Amazon Timestream Query",
+   "serviceId": "Timestream Query",
+   "category": "Databases",
+   "icon": "icons/timestream-query.svg",
+   "protocol": "json",
+   "operations": 15,
+   "listOps": [
+    "ListScheduledQueries"
+   ]
+  },
+  {
+   "id": "timestream-write",
+   "fullName": "Amazon Timestream Write",
+   "serviceId": "Timestream Write",
+   "category": "Databases",
+   "icon": "icons/timestream-write.svg",
+   "protocol": "json",
+   "operations": 19,
+   "listOps": [
+    "ListBatchLoadTasks",
+    "ListDatabases",
+    "ListTables"
+   ]
+  },
+  {
+   "id": "transcribe",
+   "fullName": "Amazon Transcribe Service",
+   "serviceId": "Transcribe",
+   "category": "Artificial Intelligence",
+   "icon": "icons/transcribe.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 44,
+   "listOps": [
+    "ListCallAnalyticsCategories",
+    "ListCallAnalyticsJobs",
+    "ListLanguageModels",
+    "ListMedicalScribeJobs",
+    "ListMedicalTranscriptionJobs",
+    "ListMedicalVocabularies"
+   ]
+  },
+  {
+   "id": "transfer",
+   "fullName": "AWS Transfer Family",
+   "serviceId": "Transfer",
+   "category": "Migration & Modernization",
+   "icon": "icons/transfer.svg",
+   "protocol": "json",
+   "operations": 71,
+   "listOps": [
+    "ListCertificates",
+    "ListConnectors",
+    "ListProfiles",
+    "ListServers",
+    "ListWebApps",
+    "ListWorkflows"
+   ]
+  },
+  {
+   "id": "translate",
+   "fullName": "Amazon Translate",
+   "serviceId": "Translate",
+   "category": "Artificial Intelligence",
+   "icon": "icons/translate.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 19,
+   "listOps": [
+    "ListLanguages",
+    "ListParallelData",
+    "ListTerminologies",
+    "ListTextTranslationJobs"
+   ]
+  },
+  {
+   "id": "trustedadvisor",
+   "fullName": "TrustedAdvisor Public API",
+   "serviceId": "TrustedAdvisor",
+   "category": "Management Tools",
+   "icon": "icons/trustedadvisor.svg",
+   "protocol": "rest-json",
+   "operations": 12,
+   "listOps": [
+    "ListChecks"
+   ]
+  },
+  {
+   "id": "uxc",
+   "fullName": "AWS User Experience Customization",
+   "serviceId": "uxc",
+   "category": "Management Tools",
+   "icon": "icons/uxc.svg",
+   "protocol": "rest-json",
+   "operations": 3,
+   "listOps": [
+    "ListServices"
+   ]
+  },
+  {
+   "id": "verifiedpermissions",
+   "fullName": "Amazon Verified Permissions",
+   "serviceId": "VerifiedPermissions",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/verifiedpermissions.svg",
+   "protocol": "json",
+   "operations": 34,
+   "listOps": [
+    "ListPolicyStoreAliases",
+    "ListPolicyStores"
+   ]
+  },
+  {
+   "id": "voice-id",
+   "fullName": "Amazon Voice ID",
+   "serviceId": "Voice ID",
+   "category": "Business Applications",
+   "icon": "icons/voice-id.svg",
+   "protocol": "json",
+   "operations": 29,
+   "listOps": [
+    "ListDomains"
+   ]
+  },
+  {
+   "id": "vpc-lattice",
+   "fullName": "Amazon VPC Lattice",
+   "serviceId": "VPC Lattice",
+   "category": "Networking & Content Delivery",
+   "icon": "icons/vpc-lattice.svg",
+   "protocol": "rest-json",
+   "operations": 73,
+   "listOps": [
+    "ListDomainVerifications",
+    "ListResourceGateways",
+    "ListServiceNetworkResourceAssociations",
+    "ListServiceNetworkServiceAssociations",
+    "ListServiceNetworkVpcAssociations",
+    "ListServiceNetworks"
+   ]
+  },
+  {
+   "id": "waf",
+   "fullName": "AWS WAF",
+   "serviceId": "WAF",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/waf.svg",
+   "protocol": "json",
+   "operations": 77,
+   "listOps": [
+    "ListActivatedRulesInRuleGroup",
+    "ListByteMatchSets",
+    "ListGeoMatchSets",
+    "ListIPSets",
+    "ListRateBasedRules",
+    "ListRegexMatchSets"
+   ]
+  },
+  {
+   "id": "waf-regional",
+   "fullName": "AWS WAF Regional",
+   "serviceId": "WAF Regional",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/waf-regional.svg",
+   "protocol": "json",
+   "operations": 81,
+   "listOps": [
+    "ListActivatedRulesInRuleGroup",
+    "ListByteMatchSets",
+    "ListGeoMatchSets",
+    "ListIPSets",
+    "ListRateBasedRules",
+    "ListRegexMatchSets"
+   ]
+  },
+  {
+   "id": "wafv2",
+   "fullName": "AWS WAFV2",
+   "serviceId": "WAFV2",
+   "category": "Security, Identity & Compliance",
+   "icon": "icons/wafv2.svg",
+   "protocol": "json",
+   "operations": 59,
+   "listOps": []
+  },
+  {
+   "id": "wellarchitected",
+   "fullName": "AWS Well-Architected Tool",
+   "serviceId": "WellArchitected",
+   "category": "Management Tools",
+   "icon": "icons/wellarchitected.svg",
+   "protocol": "rest-json",
+   "operations": 95,
+   "listOps": [
+    "ListAgentProfiles",
+    "ListLenses",
+    "ListNotifications",
+    "ListProfileNotifications",
+    "ListProfiles",
+    "ListShareInvitations"
+   ]
+  },
+  {
+   "id": "wickr",
+   "fullName": "AWS Wickr Admin API",
+   "serviceId": "Wickr",
+   "category": "Business Applications",
+   "icon": "icons/wickr.svg",
+   "protocol": "rest-json",
+   "operations": 44,
+   "listOps": [
+    "ListNetworks"
+   ]
+  },
+  {
+   "id": "wisdom",
+   "fullName": "Amazon Connect Wisdom Service",
+   "serviceId": "Wisdom",
+   "category": "Business Applications",
+   "icon": "icons/wisdom.svg",
+   "protocol": "rest-json",
+   "operations": 41,
+   "listOps": [
+    "ListAssistants",
+    "ListKnowledgeBases"
+   ]
+  },
+  {
+   "id": "workdocs",
+   "fullName": "Amazon WorkDocs",
+   "serviceId": "WorkDocs",
+   "category": "Business Applications",
+   "icon": "icons/workdocs.svg",
+   "protocol": "rest-json",
+   "operations": 44,
+   "listOps": [
+    "DescribeActivities",
+    "DescribeUsers"
+   ]
+  },
+  {
+   "id": "workmail",
+   "fullName": "Amazon WorkMail",
+   "serviceId": "WorkMail",
+   "category": "Business Applications",
+   "icon": "icons/workmail.svg",
+   "protocol": "json",
+   "operations": 92,
+   "listOps": [
+    "ListOrganizations"
+   ]
+  },
+  {
+   "id": "workmailmessageflow",
+   "fullName": "Amazon WorkMail Message Flow",
+   "serviceId": "WorkMailMessageFlow",
+   "category": "Business Applications",
+   "icon": "icons/workmailmessageflow.svg",
+   "protocol": "rest-json",
+   "operations": 2,
+   "listOps": []
+  },
+  {
+   "id": "workspaces",
+   "fullName": "Amazon WorkSpaces",
+   "serviceId": "WorkSpaces",
+   "category": "End User Computing",
+   "icon": "icons/workspaces.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 91,
+   "listOps": [
+    "DescribeAccountModifications",
+    "DescribeApplications",
+    "DescribeConnectionAliases",
+    "DescribeIpGroups",
+    "DescribeWorkspaceBundles",
+    "DescribeWorkspaceDirectories"
+   ]
+  },
+  {
+   "id": "workspaces-instances",
+   "fullName": "Amazon Workspaces Instances",
+   "serviceId": "Workspaces Instances",
+   "category": "End User Computing",
+   "icon": "icons/workspaces-instances.svg",
+   "protocol": "smithy-rpc-v2-cbor",
+   "operations": 14,
+   "listOps": [
+    "ListWorkspaceInstances"
+   ]
+  },
+  {
+   "id": "workspaces-thin-client",
+   "fullName": "Amazon WorkSpaces Thin Client",
+   "serviceId": "WorkSpaces Thin Client",
+   "category": "End User Computing",
+   "icon": "icons/workspaces-thin-client.svg",
+   "protocol": "rest-json",
+   "operations": 16,
+   "listOps": [
+    "ListDevices",
+    "ListEnvironments",
+    "ListSoftwareSets"
+   ]
+  },
+  {
+   "id": "workspaces-web",
+   "fullName": "Amazon WorkSpaces Web",
+   "serviceId": "WorkSpaces Web",
+   "category": "End User Computing",
+   "icon": "icons/workspaces-web.svg",
+   "protocol": "rest-json",
+   "operations": 75,
+   "listOps": [
+    "ListPortals",
+    "ListSessionLoggers",
+    "ListTrustStores"
+   ]
+  },
+  {
+   "id": "xray",
+   "fullName": "AWS X-Ray",
+   "serviceId": "XRay",
+   "category": "Developer Tools",
+   "icon": "icons/xray.svg",
+   "protocol": "rest-json",
+   "operations": 38,
+   "listOps": []
+  }
+ ]
+}

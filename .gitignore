@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+reports/
+node_modules/
+ui/tsconfig.tsbuildinfo
+src/emulator_ui/static/
+.playwright-mcp/

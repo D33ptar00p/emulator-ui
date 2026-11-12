@@ -1,0 +1,9 @@
+.venv
+.git
+**/__pycache__
+**/node_modules
+reports
+.pytest_cache
+.ruff_cache
+.playwright-mcp
+src/emulator_ui/static
