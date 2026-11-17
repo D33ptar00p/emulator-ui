@@ -1,7 +1,7 @@
 # Emulator UI: FastAPI backend + compiled React UI, one process on :8080.
 # Build context is the repo root:  docker build -f docker/console.Dockerfile -t emulator-ui .
 # The UI bundle is architecture-independent: build it once on the native platform.
-FROM --platform=$BUILDPLATFORM node:22.11.0-alpine3.20 AS web
+FROM --platform=$BUILDPLATFORM node:22.23.5-alpine3.24 AS web
 WORKDIR /ui
 COPY ui/package.json ui/package-lock.json ./
 RUN npm ci --no-fund --no-audit
