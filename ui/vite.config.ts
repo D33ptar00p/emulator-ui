@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
 // `make console-dev` runs the API on :8081 with reload; Vite proxies /api to it.
